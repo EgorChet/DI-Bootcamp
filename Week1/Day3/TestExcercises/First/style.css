@@ -1,0 +1,30 @@
+.container {
+    height: 600px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div {
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+}
+
+.div1{
+    width: 100%;
+}
+
+.div2{
+    height: 200px;
+    width: 70%;
+}
+
+.div3{
+    width: 100%;
+}
+

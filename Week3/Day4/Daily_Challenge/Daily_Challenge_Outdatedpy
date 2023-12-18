@@ -1,0 +1,98 @@
+import string
+
+class Text:
+
+    def __init__(self, text) -> None:
+        self.text = text
+
+    def frequency_of_word(self, word):
+        words = self.string.split()
+        count = words.count(word)
+        if count:
+            return f"The word '{word}' appears {count} times."
+        else:
+            return f"The word '{word}' does not appear in this text."
+        
+    def word_frequency(self, word):
+        words = self.text.split()
+        word_count = words.count(word)
+        return f"The word '{word}' appears {word_count} times." if word_count > 0 else f"The word {word} not found in text."
+
+    def most_common_word(self):
+        words = self.text.split()
+        return f'Most common word: {max(set(words), key=words.count)}!'
+
+    def unique_words(self):
+        words = self.text.split()
+        return list(set(words))
+    
+    @classmethod
+    def from_file(cls, filename):
+        with open(filename, 'r', encoding='utf-8') as file:
+            content = file.read()
+        return cls(content)
+    
+text_instance = Text("A good book would sometimes cost as much as a good house.")
+print(text_instance.text)
+print()
+print(text_instance.word_frequency('good')) # Frequency of 'good'
+print(text_instance.word_frequency('as')) # Frequency of 'as'
+print(text_instance.word_frequency('bad')) # Frequency of 'bad'
+print()
+print(text_instance.most_common_word()) # Most common word
+print()
+print(text_instance.unique_words()) # List of unique words
+
+# Part II
+
+text_from_file = Text.from_file('the_stranger.txt')
+print(text_from_file.text)
+
+# Bonus
+stopwords = [
+    "a", "about", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are", "as", "at", 
+    "be", "because", "been", "before", "being", "below", "between", "both", "but", "by", 
+    "could", 
+    "did", "do", "does", "doing", "down", "during", 
+    "each", 
+    "few", "for", "from", "further", 
+    "had", "has", "have", "having", "he", "her", "here", "hers", "herself", "him", "himself", "his", "how", 
+    "i", "if", "in", "into", "is", "it", "its", "itself", 
+    "just", 
+    "me", "more", "most", "my", "myself", 
+    "no", "nor", "not", "now", 
+    "of", "off", "on", "once", "only", "or", "other", "our", "ours", "ourselves", "out", "over", "own", 
+    "same", "she", "should", "so", "some", "such", 
+    "than", "that", "the", "their", "theirs", "them", "themselves", "then", "there", "these", "they", "this", "those", "through", "to", "too", 
+    "under", "until", "up", 
+    "very", 
+    "was", "we", "were", "what", "when", "where", "which", "while", "who", "whom", "why", "will", "with", "would", 
+    "you", "your", "yours", "yourself", "yourselves"
+]
+
+class TextModification(Text):
+    def text_without_punctuation(self):
+        return self.text.translate(str.maketrans('', '', string.punctuation))
+
+    def text_without_stopwords(self):
+        # Assuming stopwords list is defined or imported
+        words = self.text.split()  # Corrected to use self.string
+        return ' '.join(word for word in words if word.lower() not in stopwords)
+
+    def text_without_special_characters(self):
+        # Corrected to use self.string
+        return ''.join(char for char in self.text if char.isalnum() or char.isspace())
+
+# Example usage
+text_mod = TextModification("A good, book; sometimes! cost? as much as a !@&*good house @ 2023.")
+
+print("\nText without punctuation:")
+print(text_mod.text_without_punctuation())  # Removes commas, semicolons, etc., retains '#', '$', '@'
+
+print("\nText without stopwords:")
+print(text_mod.text_without_stopwords())  # Removes stopwords, keeps all other characters
+
+print("\nText without special characters:")
+print(text_mod.text_without_special_characters())  # Removes all special characters, including '#', '$', '@'
+
+

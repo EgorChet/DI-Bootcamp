@@ -1,0 +1,36 @@
+.containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container2 {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 80px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+div {
+    background-color: yellow;
+    height: 140px;
+    width: 140px;
+    border:2px solid black;
+    text-align: center;
+}
+
+
+
+

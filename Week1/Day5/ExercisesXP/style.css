@@ -1,0 +1,171 @@
+
+/* html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 59%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 65%; } } */
+
+body {
+  padding-top: 70px; /* Adjust the value to the height of your navbar */
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 900;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  padding-top: 3%;
+}
+
+h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-top: 3%;
+  font-weight: 700;
+}
+
+.hero-section {
+  position: relative; /* Ensuring that the hero-section is the reference for the sidebar */
+  padding: auto;
+  min-height: 100vh; /* Full viewport height */
+  color: whitesmoke;
+  background-image: url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=800");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.social-sidebar {
+  position: absolute; /* Positioned relative to the hero-section */
+  top: 50%;
+  left: 15px; /* Adjust as needed */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.social-sidebar a {
+  color: #333; /* Social icon color */
+  background-color: #fff; /* Social icon background color */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  text-align: center;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.social-sidebar a:hover {
+  color: #fff; /* Social icon hover color */
+  background-color: black; /* Social icon hover background color */
+}
+
+.social-sidebar i {
+  font-size: 20px; /* Icon size */
+}
+
+.lead {
+  text-align: center;
+  margin-top: 23%;
+  padding-left: 25%;
+  padding-bottom: 5%;
+  padding-right: 25%;
+}
+
+.btnprojects {
+  transition: all 0.3s ease;
+  width: 12%; /* for larger screens */
+  min-width: 100px; /* prevent the button from becoming too narrow */
+}
+
+@media (max-width: 768px) {
+  .btnprojects {
+    width: auto; /* allows the button to grow with the content */
+    padding-left: 1rem; /* or use .pl-3 for Bootstrap's spacing utility */
+    padding-right: 1rem; /* or use .pr-3 for Bootstrap's spacing utility */
+  }
+}
+
+.shrink:hover
+{
+ -webkit-transform: scale(0.8);
+ -ms-transform: scale(0.8);
+ transform: scale(0.8);
+}
+
+.mouse-icon {
+  width: 24px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative; /* or absolute, depending on the layout context */
+  top: 0; /* no change in the vertical position */
+  left: 50%; /* start centering horizontally */
+  transform: translateX(-50%); /* center the element to the parent horizontally */
+  background: white;
+}
+
+.scroll-wheel {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+  animation: scroll-down 1.5s ease-in-out infinite;
+}
+
+@keyframes scroll-down {
+  0%, 100% {
+      top: 8px;
+      opacity: 1;
+  }
+  50% {
+      top: 20px;
+      opacity: 0.5;
+  }
+}
+
+/* footer */
+
+.footer {
+  font-family: monospace, sans-serif;
+  background-color: black;
+  position: static;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+
+.iconwrap {
+  padding-top: 1vw;
+  margin: 1%;
+  margin-bottom: 2%;
+}
+
+.iconwrap a {
+  margin: 1vw;
+}
+
+.copyright {
+  margin-top: 3%;
+}
+
+.fa-brands:hover{
+  transition:all 0.3s ease;
+  -webkit-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  transform: scale(1.8);
+}
+
+
+

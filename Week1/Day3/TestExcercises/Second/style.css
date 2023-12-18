@@ -1,0 +1,31 @@
+.container {
+    height: 600px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div {
+    height: 33%;
+    width: 100%;
+    background-color: blue;
+}
+
+.div1{
+    width: 100%;
+}
+
+.div2{
+    align-self: flex-end;
+    height: 33%;
+    width: 22%;
+}
+
+.div3{
+    height: 33%;
+    width: 100%;
+}
+

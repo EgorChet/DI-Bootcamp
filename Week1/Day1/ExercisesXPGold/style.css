@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 1%;
+    background-color: #f5f5f5;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.6vw;
+}
+
+.SignIn {
+    padding: 0.8vw 1.2vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+.SignIn:hover {
+    background-color: #0056b3;
+}
+
+.EmailSignUp {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.SignInInput {
+    background-color: white;
+    width: 25vw;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+}
+
+.SignUp {
+    width: 6vw;
+    height: 3vw;
+    margin-left: 0.5vw; 
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.SignUp:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    font-size: 2.7vw;
+    text-align: center;
+    margin: 2vw 15vw;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+main {
+    margin-top: 1%;
+    padding: 10%;
+    background-image: url("https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=800");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between feature items */
+    padding: 2rem;
+}
+
+.features p {
+    color: black;
+}
+
+.features h2 {
+    margin: 2rem 0; /* Spacing above and below heading */
+    color: black;
+}
+
+.feature-item {
+    width: calc(33.333% - 1rem); /* Divide space into thirds, accounting for gap */
+    text-align: center;
+    padding: 1rem;
+    background: white; /* White background for feature items */
+    border-radius: 5px; /* Rounded corners for the feature items */
+}
+
+.feature-item a {
+    display: block; /* Allows the link to fill the entire space of its container */
+    text-decoration: none;
+}

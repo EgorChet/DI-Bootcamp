@@ -1,0 +1,109 @@
+.container {
+    height: 600px;
+    width: 450px;
+    display: grid;
+    grid-template-areas:
+    "a a a a a a a a"
+    "b b b c c c c c"
+    "b b b c c c c c"
+    "b b b c c c c c"
+    "d d d c c c c c"
+    "d d d c c c c c"
+    "d d d e e e e e"
+    "d d d e e e e e"
+    "f f f f f f g g"
+    "f f f f f f g g"
+    "h h h h h h h h";
+    /* "a a a a a"
+    "b b c c c"
+    "b b c c c"
+    "b b c c c"
+    "d d c c c"
+    "d d c c c"
+    "d d e e e"
+    "d d e e e"
+    "f f f f g"
+    "f f f f g"
+    "h h h h h"; */
+}
+
+"a a a a a a a a"
+"b b b c c c c c"
+"b b b c c c c c"
+"b b b c c c c c"
+"d d d c c c c c"
+"d d d c c c c c"
+"d d d e e e e e"
+"d d d e e e e e"
+"f f f f f f g g"
+"f f f f f f g g"
+"h h h h h h h h";
+
+div {
+}
+
+.div1{
+    background-color: aqua;
+    grid-area: a;
+}
+
+.div2{
+    background-color: violet;
+    grid-area: b;
+}
+
+.div3{
+    background-color: orange;
+    grid-area: c;
+}
+
+.div4{
+    background-color: greenyellow;
+    grid-area: d;
+}
+
+.div5{
+
+    background-color: grey;
+    grid-area: e;
+}
+
+.div6{
+
+    background-color: green;
+    grid-area: f;
+}
+
+.div7{
+    background-color: pink;
+    grid-area: g;
+}
+
+ .div8{
+    background-color: rgb(181, 107, 10);
+    grid-area: h;
+}
+
+/*
+.div9{
+    background-color: blue;
+    grid-area: blue6;
+}
+
+.div10{
+    grid-area: yellow1;
+    background-color: yellow;
+}
+
+.div11{
+    background-color: yellow;
+    grid-area: yellow2;
+}
+
+.div12{
+    background-color: yellow;
+    grid-area: yellow3;
+} */
+
+
+

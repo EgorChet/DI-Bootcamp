@@ -1,0 +1,40 @@
+div {
+    height: 100px;
+}
+
+#div1 {
+    background-color: red;
+}
+
+#div2 {
+    background-color: blue;
+}
+
+#div3 {
+    background-color: green;
+}
+
+#div4 {
+    background-color: purple;
+}
+
+@media only screen and (min-width: 600px) {
+    div {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    div {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div {
+        width: 25%;
+        float: left;
+    }
+}
