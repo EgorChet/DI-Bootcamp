@@ -1,10 +1,10 @@
+const horizontalLine = "\x1b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\x1b[0m";
 // // 🌟 Exercise 1 : List Of People
 // // Part1
 // console.log('Exercise 1 Part 1')
 // const people = ["Greg", "Mary", "Devon", "James"]
 // console.log("The list of People")
 // console.log(people + '\n')
-const horizontalLine = "\x1b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\x1b[0m";
 // console.log(horizontalLine);
 
 // console.log("\nThe list after removing Greg")
@@ -121,35 +121,35 @@ const horizontalLine = "\x1b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 
 // console.log("Thank you, your number is:", number);
 
-// THIS IS THE VERSION I DID LAST WEEK IT IS MADE TO BE USED IN TERMINAL 
-// const readline = require('readline');
+// // THIS IS THE VERSION I DID LAST WEEK IT IS MADE TO BE USED IN TERMINAL 
+// // const readline = require('readline');
 
-// // Create an interface for input and output
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// });
+// // // Create an interface for input and output
+// // const rl = readline.createInterface({
+// //   input: process.stdin,
+// //   output: process.stdout
+// // });
 
-// let userInput;
+// // let userInput;
 
-// const askForNumber = () => {
-//   rl.question('Please enter a number: ', (input) => {
-//     userInput = parseInt(input); // Convert string input to a number
-//     console.log(`You entered: ${userInput}, which is a ${typeof userInput}`);
+// // const askForNumber = () => {
+// //   rl.question('Please enter a number: ', (input) => {
+// //     userInput = parseInt(input); // Convert string input to a number
+// //     console.log(`You entered: ${userInput}, which is a ${typeof userInput}`);
 
-//     // Check if the input is a number and less than 10
-//     if (!isNaN(userInput) && userInput < 10) {
-//       console.log("The number is smaller than 10. Let's try again.");
-//       askForNumber(); // Recursively ask for a new number
-//     } else {
-//       console.log("The number is 10 or greater. Well done!");
-//       rl.close(); // Close the readline interface
-//     }
-//   });
-// };
+// //     // Check if the input is a number and less than 10
+// //     if (!isNaN(userInput) && userInput < 10) {
+// //       console.log("The number is smaller than 10. Let's try again.");
+// //       askForNumber(); // Recursively ask for a new number
+// //     } else {
+// //       console.log("The number is 10 or greater. Well done!");
+// //       rl.close(); // Close the readline interface
+// //     }
+// //   });
+// // };
 
-// askForNumber(); // Initial call to start the process
-// console.log(horizontalLine);
+// // askForNumber(); // Initial call to start the process
+// // console.log(horizontalLine);
 
 // // 🌟 Exercise 4 : Building Management
 // console.log('\nExercise 4 : Building Management')
@@ -210,61 +210,65 @@ const horizontalLine = "\x1b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 //     console.log("No need to increase Dan's rent.");
 // }
 // console.log(horizontalLine);
-// 🌟 Exercise 5 : Family
-console.log('\nExercise 5 : Family')
-// Create an object called family with a few key value pairs.
-const family = {
-  numberOfMembers: 5,
-  numberOfChildren: 2,
-  pets: 1,
-  address: "Ibn Gabirol",
-  lastName: "Chetverikov",
-  hasCar: true,
-};
+// // 🌟 Exercise 5 : Family
+// console.log('\nExercise 5 : Family')
+// // Create an object called family with a few key value pairs.
+// const family = {
+//   numberOfMembers: 5,
+//   numberOfChildren: 2,
+//   pets: 1,
+//   address: "Ibn Gabirol",
+//   lastName: "Chetverikov",
+//   hasCar: true,
+// };
 
-// Using a for in loop, console.log the keys of the object.
-console.log("Keys of the family object:");
-for (let key in family) {
-    console.log(key);
-}
-console.log(horizontalLine);
+// // Using a for in loop, console.log the keys of the object.
+// console.log("Keys of the family object:");
+// for (let key in family) {
+//     console.log(key);
+// }
+// console.log(horizontalLine);
 
-// Using a for in loop, console.log the values of the object.
-console.log("\nValues of the family object:");
-for (let key in family) {
-    console.log(family[key]);
-}
-console.log(horizontalLine);
+// // Using a for in loop, console.log the values of the object.
+// console.log("\nValues of the family object:");
+// for (let key in family) {
+//     console.log(family[key]);
+// }
+// console.log(horizontalLine);
 
-// Exercise 6 : Rudolf
+// // Exercise 6 : Rudolf
 
-const details = {
-  my: 'name',
-  is: 'Rudolf',
-  the: 'raindeer'
-}
+// const details = {
+//   my: 'name',
+//   is: 'Rudolf',
+//   the: 'raindeer'
+// }
 
-// Given the object above and using a for loop, console.log “my name is Rudolf the raindeer”
+// // Given the object above and using a for loop, console.log “my name is Rudolf the raindeer”
 
-let sentence = '';
+// let sentence = '';
 
-for (let key in details) {
-    // Concatenate the key and its value to the sentence
-    sentence += `${key} ${details[key]} `;
-}
+// for (let key in details) {
+//     // Concatenate the key and its value to the sentence
+//     sentence += `${key} ${details[key]} `;
+// }
 
-console.log('\nExercise 6 : Rudolf')
-console.log(sentence);  // Output: my name is Rudolf the raindeer
-console.log(horizontalLine);
-// Exercise 7 : Secret Group
+// console.log('\nExercise 6 : Rudolf')
+// console.log(sentence);  // Output: my name is Rudolf the raindeer
+// console.log(horizontalLine);
 
-const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+// // Exercise 7 : Secret Group
 
-// A group of friends have decided to start a secret society. The society’s name will be the first letter of each of their names sorted in alphabetical order.
-// Hint: a string is an array of letters
-// Console.log the name of their secret society. The output should be “ABJKPS”
+// // A group of friends have decided to start a secret society. The society’s name will be the first letter of each of their names sorted in alphabetical order.
+// // Hint: a string is an array of letters
+// // Console.log the name of their secret society. The output should be “ABJKPS”
 
-const societyName = names.map(name => name[0]).sort().join('');
-console.log('\nExercise 7 : Secret Group')
-console.log(societyName);  // Output: "ABJKPS"
-console.log(horizontalLine);
+// const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+// console.log(names.sort())
+// let output = ""
+//     for (let name of names) {
+//         output += name[0];
+//     }
+
+// console.log(output)
+// console.log(horizontalLine);
