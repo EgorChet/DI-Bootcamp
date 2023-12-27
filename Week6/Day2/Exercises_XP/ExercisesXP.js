@@ -59,7 +59,7 @@ boldButton.innerText = 'Make Text Bold';
 // Styling the button to make it more modern and visually appealing
 boldButton.style.position = 'fixed';
 boldButton.style.left = '50%';
-boldButton.style.top = '50%';
+boldButton.style.top = '90%';
 boldButton.style.transform = 'translate(-50%, -50%)';
 boldButton.style.padding = '15px 30px';
 boldButton.style.fontSize = '18px';
@@ -188,9 +188,6 @@ form.addEventListener('submit', function(event) {
 // <strong>end</strong> you <strong>will</strong> be great Developers!
 // <strong>Enjoy</strong> the <strong>JavaScript </strong> lessons</p>
 
-
-// In the JS file:
-
 // Declare a global variable named allBoldItems
 let allBoldItems;
 
@@ -220,35 +217,7 @@ getBoldItems();
 const targetParagraph = document.querySelector('body > p:last-of-type');
 
 // Call the function highlight() on mouseover
+targetParagraph.addEventListener('mouseover', highlight);
 
-
-
-
-
-// 🌟 Exercice 4 : Volume Of A Sphere
-// Instructions
-// Write a JavaScript program to calculate the volume of a sphere. Use the code below as a base:
-// <!doctype html> 
-// <html lang="en"> 
-//     <head> 
-//         <meta charset="utf-8"> 
-//         <title>Volume of a Sphere</title> 
-//         <style>  
-//             body {
-//                 padding-top:30px;
-//             } 
-
-//             label,input {
-//                 display:block;
-//             }  
-//         </style> 
-//     </head> 
-//     <body> 
-//         <p>Input radius value and get the volume of a sphere.</p> 
-//         <form  id="MyForm"> 
-//             <label for="radius">Radius</label><input type="text" name="radius" id="radius" required> 
-//             <label for="volume">Volume</label><input type="text" name="volume" id="volume"> 
-//             <input type="submit" value="Calculate" id="submit">    
-//         </form> 
-//     </body> 
-// </html> 
+// Call the function returnItemsToDefault() on mouseout
+targetParagraph.addEventListener('mouseout', returnItemsToDefault);
