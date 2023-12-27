@@ -1,0 +1,13 @@
+#container {
+  height: 450px;
+  width: 450px;
+  background-color: red;
+  position: relative;
+}
+
+#child {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  position: absolute;
+}

@@ -1,0 +1,12 @@
+.aClass {
+  background-color: red;
+}
+
+.bClass {
+  border: 10px dotted blue;
+}
+
+.cClass {
+  display: inline-block;
+  height: 400px;
+}
