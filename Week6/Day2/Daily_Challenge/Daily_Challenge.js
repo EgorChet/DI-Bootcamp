@@ -1,50 +1,13 @@
-let client = "John";
+// Instructions
+// In todays exercise we will be creating a Mad Libs game.
+// If you’ve never played this game, a mad lib is a game where you fill in a bunch of blank inputs with different word types (ie : noun, adjective, verb), and then a story is generated based on the words you chose, and sometimes the story is surprisingly funny.
 
-const groceries = {
-    fruits : ["pear", "apple", "banana"],
-    vegetables: ["tomatoes", "cucumber", "salad"],
-    totalPrice : "20$",
-    other : {
-        paid : true,
-        meansOfPayment : ["cash", "creditCard"]
-    }
-}
+// In this exercise you work with the HTML code presented below.
 
-// Create an arrow function named displayGroceries, that console.logs the 3 fruits from the groceries object. Use the forEach method.
-const displayGroceries = () => {
-    groceries.fruits.forEach(fruit => {
-        console.log(fruit);
-    });
-};
+// Follow these steps :
 
-displayGroceries()
-
-// Create another arrow function named cloneGroceries.
-// In the function, create a variable named user that is a copy of the client variable. (Tip : make the user variable equal to the client variable)
-// Change the client variable to “Betty”. Will we also see this modification in the user variable ? Why ?
-// In the function, create a variable named shopping that is equal to the groceries variable.
-// Change the value of the totalPrice key to 35$. Will we also see this modification in the shopping object ? Why ?
-// Change the value of the paid key to false. Will we also see this modification in the shopping object ? Why ?
-
-const cloneGroceries = () => {
-    // Create a variable named user that is a copy of the client variable.
-    let user = client;
-
-    // Change the client variable to “Betty”.
-    client = "Betty";
-    console.log(`client: ${client}, user: ${user}`);
-
-    // Create a variable named shopping that is equal to the groceries variable.
-    let shopping = groceries;
-
-    // Change the value of the totalPrice key to 35$.
-    groceries.totalPrice = "35$";
-    console.log(`groceries totalPrice: ${groceries.totalPrice}, shopping totalPrice: ${shopping.totalPrice}`);
-
-    // Change the value of the paid key to false.
-    groceries.other.paid = false;
-    console.log(`groceries paid: ${groceries.other.paid}, shopping paid: ${shopping.other.paid}`);
-};
-
-cloneGroceries();
-
+// Get the value of each of the inputs in the HTML file when the form is submitted. Remember the event.preventDefault()
+// Make sure the values are not empty
+// Write a story that uses each of the values.
+// Make sure you check the console for errors when playing the game.
+// Bonus: Add a “shuffle” button to the HTML file, when clicked the button should change the story currently displayed (but keep the values entered by the user). The user could click the button at least three times and get a new story. Display the stories randomly.
