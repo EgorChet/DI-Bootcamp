@@ -139,12 +139,16 @@ console.log(kgToG(5));
 // meaning they can be called before they are defined. Function expressions are not hoisted.
 console.log('--------');
 
-// 🌟 Exercise 6: Fortune Teller
-(function(children, partnerName, location, jobTitle) {
-    const fortuneDiv = document.createElement('div');
-    fortuneDiv.innerText = `You will be a ${jobTitle} in ${location}, and married to ${partnerName} with ${children} kids.`;
-    document.body.appendChild(fortuneDiv);  // Appends the fortune message to the body
-})(2, 'Jane', 'New York', 'Developer');
+(function(numberOfChildren, partnersName, geographicLocation, jobTitle) {
+    // Create a new paragraph element
+    const p = document.createElement('p');
+    
+    // Set the text of the paragraph to the sentence with the provided arguments
+    p.textContent = `You will be a ${jobTitle} in ${geographicLocation}, and married to ${partnersName} with ${numberOfChildren} kids.`;
+    
+    // Append the paragraph to the body of the document so it appears in the DOM
+    document.body.appendChild(p);
+})(2, 'Yulia', 'Paris', 'Full-Stack Developer'); // Example arguments with simpler values
 
 // 🌟 Exercise 7: Welcome
 (function(userName) {
