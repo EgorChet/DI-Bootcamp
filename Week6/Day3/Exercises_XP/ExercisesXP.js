@@ -189,8 +189,8 @@ function makeShake(size) {
         document.body.appendChild(shakeDiv);  // Append the new div to the body
     }
 
-    addIngredients("banana", "dates", "Tahini");
-    addIngredients("Peanut butter", "Strawberry", "MORE BANANA PLEASE");
+    addIngredients("Banana", "Dates", "Tahini");
+    addIngredients("Peanut butter", "Strawberry", "Almond");
     displayShake();
 }
 
