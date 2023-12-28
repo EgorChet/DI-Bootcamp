@@ -78,90 +78,117 @@
 // // #5.2 - it wont change the anything.
 
 
-// // 🌟 Exercise 2: Ternary Operator
+// 🌟 Exercise 2: Ternary Operator
 
-// // Using the code below:
+// Using the code below:
 
-// // function winBattle(){
-// //     return true;
-// // }
-
-// const winBattle = () => true;
-
-// let experiencePoints = winBattle() ? 10 : 1;
-// console.log(experiencePoints);
-
-// // First, you transform the winBattle() function into an arrow function. Arrow functions provide a concise syntax to write function expressions.
-// // Then, you create a variable called experiencePoints. Instead of using a traditional if...else statement, you use a ternary operator to assign the value. A ternary operator is a shorthand for if...else that takes three operands: a condition followed by a question mark (?), the expression to execute if the condition is true followed by a colon (:), and the expression to execute if the condition is false.
-// // In this case, if winBattle() returns true, experiencePoints becomes 10; otherwise, it's 1.
-// // Lastly, you log experiencePoints to the console to see the result.
-
-// // 🌟 Exercise 3: Is It A String?
-
-// const isString = (value) => typeof value === 'string';
-
-// console.log(isString('hello'));
-// console.log(isString([1, 2, 4, 0])); 
-
-// // 🌟 Exercise 4: Find The Sum
-
-// const sum = (a, b) => a + b;
-
-// // 🌟 Exercise 5: Kg And Grams
-
-// // Function declaration
-// function kilogramsToGrams(kg) {
-//     return kg * 1000;
+// function winBattle(){
+//     return true;
 // }
-// console.log(kilogramsToGrams(5)); // Invoke function declaration
 
-// // Function expression
-// const kilogramsToGramsExpr = function(kg) {
-//     return kg * 1000;
-// };
-// console.log(kilogramsToGramsExpr(5)); // Invoke function expression
+const winBattle = () => true;
 
-// // One-line arrow function
-// const kgToG = (kg) => kg * 1000;
-// console.log(kgToG(5)); // Invoke arrow function
+let experiencePoints = winBattle() ? 10 : 1;
+console.log('Exercise 2: Ternary Operator')
+console.log(experiencePoints);
 
-// // Difference between function declaration and expression: Function declarations are hoisted,
-// // meaning they can be called before they are defined. Function expressions are not hoisted.
+// First, you transform the winBattle() function into an arrow function. Arrow functions provide a concise syntax to write function expressions.
+// Then, you create a variable called experiencePoints. Instead of using a traditional if...else statement, you use a ternary operator to assign the value. A ternary operator is a shorthand for if...else that takes three operands: a condition followed by a question mark (?), the expression to execute if the condition is true followed by a colon (:), and the expression to execute if the condition is false.
+// In this case, if winBattle() returns true, experiencePoints becomes 10; otherwise, it's 1.
+// Lastly, you log experiencePoints to the console to see the result.
+
+// 🌟 Exercise 3: Is It A String?
+
+const isString = (value) => typeof value === 'string';
+console.log('Exercise 3: Is It A String?')
+console.log(isString('hello'));
+console.log(isString([1, 2, 4, 0])); 
+console.log('--------');
+
+
+// 🌟 Exercise 4: Find The Sum
+
+const sum = (a, b) => a + b;
+
+console.log('Exercise 4: Find The Sum')
+console.log(sum(10, 15));
+console.log('--------');
+
+// 🌟 Exercise 5: Kg And Grams
+
+// Function declaration
+function kilogramsToGrams(kg) {
+    return kg * 1000;
+}
+console.log('Invoke function declaration')
+console.log(kilogramsToGrams(5)); // 
+console.log('---');
+// Function expression
+const kilogramsToGramsExpr = function(kg) {
+    return kg * 1000;
+};
+console.log('Invoke function expression')
+console.log(kilogramsToGramsExpr(5));
+console.log('---');
+
+// One-line arrow function
+const kgToG = (kg) => kg * 1000;
+console.log('Invoke arrow function')
+console.log(kgToG(5));
+// Difference between function declaration and expression: Function declarations are hoisted,
+// meaning they can be called before they are defined. Function expressions are not hoisted.
+console.log('--------');
 
 // 🌟 Exercise 6: Fortune Teller
-
-// Self invoking function
 (function(children, partnerName, location, jobTitle) {
-    document.body.innerHTML = `You will be a ${jobTitle} in ${location}, and married to ${partnerName} with ${children} kids.`;
+    const fortuneDiv = document.createElement('div');
+    fortuneDiv.innerText = `You will be a ${jobTitle} in ${location}, and married to ${partnerName} with ${children} kids.`;
+    document.body.appendChild(fortuneDiv);  // Appends the fortune message to the body
 })(2, 'Jane', 'New York', 'Developer');
 
-// // 🌟 Exercise 7: Welcome
+// 🌟 Exercise 7: Welcome
+(function(userName) {
+    // Create the navbar element as a 'div'
+    const navbar = document.createElement('div');
+    navbar.className = 'navbar';
+    navbar.style.cssText = `
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    `;
 
-// // Assuming HTML contains a <div id="navbar"></div>
-// (function(userName) {
-//     const navbar = document.getElementById('navbar');
-//     const div = document.createElement('div');
-//     div.textContent = `Welcome, ${userName}!`;
-//     navbar.appendChild(div);
-// })('John');
+    // Set the inner HTML of the navbar to include the welcome text and profile picture
+    navbar.innerHTML = `
+        <strong>Welcome, ${userName}!</strong>
+        <img src="https://www.uwlax.edu/User/photo/jnunley.jpg" alt="Profile Picture"
+             style="width: 50px; height: 50px; border-radius: 50%; margin-left: 15px;">
+    `;
 
-// // 🌟 Exercise 8: Juice Bar
+    // Add the navbar to the top of the body of the webpage
+    document.body.prepend(navbar);  // Prepend ensures navbar stays at the top
 
-// function makeJuice(size) {
-//     let ingredients = [];
+})('John');
 
-//     function addIngredients(...args) {
-//         ingredients.push(...args);
-//     }
+// 🌟 Exercise 8: Shake Bar
+function makeShake(size) {
+    const ingredients = [];
+    function addIngredients(ing1, ing2, ing3) {
+        ingredients.push(ing1, ing2, ing3);
+    }
 
-//     function displayJuice() {
-//         document.body.innerHTML = `The client wants a ${size} juice, containing ${ingredients.join(', ')}.`;
-//     }
+    function displayShake() {
+        const shakeDiv = document.createElement('div');  // Create a new div for the shake message
+        shakeDiv.innerText = `The client wants a ${size} shake, containing ${ingredients.join(", ")}.`;
+        document.body.appendChild(shakeDiv);  // Append the new div to the body
+    }
 
-//     // Add ingredients and display juice
-//     addIngredients('apple', 'banana', 'mango');
-//     addIngredients('pineapple', 'peach');
-//     displayJuice();
-// }
+    addIngredients("banana", "dates", "Tahini");
+    addIngredients("Peanut butter", "Strawberry", "MORE BANANA PLEASE");
+    displayShake();
+}
 
-// makeJuice('large');
+makeShake("HUGE");
+
