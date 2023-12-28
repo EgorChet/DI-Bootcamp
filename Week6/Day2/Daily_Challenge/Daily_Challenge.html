@@ -1,27 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset="utf-8" />
-    <title>Challenge: Mad Libs</title>
-    </head>
-    <body>
+<head>
+<meta charset="utf-8" />
+<title>Challenge: Mad Libs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
-        <h1>Mad Libs</h1>
+        h1 {
+            color: #333;
+        }
 
-        <form id="libform">
-            <label for="noun">Noun:</label><input type="text" id="noun"><br>
-            <label for="adjective">Adjective:</label><input type="text" id="adjective"><br>
-            <label for="person">Someone's Name:</label><input type="text" id="person"><br>
-            <label for="verb">Verb:</label><input type="text" id="verb"><br>
-            <label for="place">A place:</label><input type="text" id="place"><br>
-            <button id="lib-button">Lib it!</button>
-        </form>
+        #libform {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 320px; /* Increased the form width */
+            margin: 0 auto;
+            text-align: left; /* Align form content to the left */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+        }
 
-        <p>Generated story: 
-            <span id="story"></span>
-        </p>
+        input[type="text"] {
+            width: 100%; /* Expand input fields to fill the available space */
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-        <script src="Daily_Challenge.js"></script>
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    </body>
+        #story {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        button#shuffle-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mad Libs</h1>
+
+    <form id="libform">
+        <label for="noun">Noun:</label><input type="text" id="noun"><br>
+        <label for="adjective">Adjective:</label><input type="text" id="adjective"><br>
+        <label for="person">Someone's Name:</label><input type="text" id="person"><br>
+        <label for="verb">Verb:</label><input type="text" id="verb"><br>
+        <label for="place">A place:</label><input type="text" id="place"><br>
+        <button id="lib-button" type="submit">Lib it!</button>
+    </form>
+
+    <p>Generated story: 
+        <span id="story"></span>
+    </p>
+
+    <script src="Daily_Challenge.js"></script>
+
+</body>
 </html>
