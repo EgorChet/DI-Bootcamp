@@ -115,11 +115,6 @@ document.getElementById('search-input').addEventListener('input', (e) => {
 // Initial display of all robots
 displayRobots(robots);
 
-  
-  
-
-
-
 // function createCard(robot) {
 //     return `<div class="card">
 //                 <img src="${robot.image}" alt="${robot.name}">
