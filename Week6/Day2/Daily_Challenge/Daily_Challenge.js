@@ -67,15 +67,36 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.appendChild(shuffleButton);
 
     const stories = [
-        `In a ${adjective} moment, ${person} decided to ${verb} at the ${place} with their favorite ${noun}.`,
-        `${person} always believed that a ${noun} could ${verb}, especially in a ${adjective} place like ${place}.`,
-        `Why did ${person} bring a ${noun} to the ${place}? Just to ${verb} in the most ${adjective} way possible!`
+        `In an %adjective% moment, %person% decided to %verb% at the %place% with their favorite %noun%.`,
+        `%person% always believed that a %noun% could %verb%, especially in a %adjective% place like %place%.`,
+        `Why did %person% bring a %noun% to the %place%? Just to %verb% in the most %adjective% way possible!`
     ];
 
     shuffleButton.addEventListener('click', function() {
-        const randomStory = stories[Math.floor(Math.random() * stories.length)];
-        document.getElementById('story').innerText = randomStory.replace(/noun|adjective|person|verb|place/g, match => {
-            return {noun, adjective, person, verb, place}[match];
-        });
+        // Retrieve current input values
+        const noun = document.getElementById('noun').value;
+        const adjective = document.getElementById('adjective').value;
+        const person = document.getElementById('person').value;
+        const verb = document.getElementById('verb').value;
+        const place = document.getElementById('place').value;
+
+        // Validate inputs
+        if (!noun || !adjective || !person || !verb || !place) {
+            alert("Please fill out all fields before shuffling!");
+            return;
+        }
+
+        // Randomly select a story template and fill it with current input words
+        const randomStoryIndex = Math.floor(Math.random() * stories.length);
+        let newStory = stories[randomStoryIndex];
+        newStory = newStory.replace('%noun%', noun)
+                           .replace('%adjective%', adjective)
+                           .replace('%person%', person)
+                           .replace('%verb%', verb)
+                           .replace('%place%', place);
+
+        // Update the story on the page
+        document.getElementById('story').innerText = newStory;
     });
 });
+
