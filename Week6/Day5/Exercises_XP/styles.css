@@ -1,0 +1,107 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #0A0A0A url('circuit-pattern.png');
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding-top: 220px; /* Adjust this value based on the actual height of your nav bar */
+    color: #fff;
+}
+
+.nav-bar {
+    background: rgba(3, 3, 3, 0.9); /* Adjusted to slightly transparent */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Ensure the nav bar is above other content */
+}
+
+#search-box {
+    padding: 10px;
+}
+
+#search-input {
+    font-family: 'Orbitron', sans-serif;
+    width: 83%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: rgba(3, 32, 60, 0.9);
+    color: #fff;
+}
+
+#search-input::placeholder {
+    color: #bbb;
+}
+
+#search-input:-ms-input-placeholder {
+    color: #bbb;
+}
+
+#search-input::-ms-input-placeholder {
+    color: #bbb;
+}
+
+#robot-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 10px;
+    padding: 20px;
+    background: rgba(3, 32, 60, 0.9) url('card-pattern.png');
+    background-size: cover; /* Changed to cover to ensure the background covers the whole card */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: calc(25% - 20px); /* Adjust the width or use min-width for smaller screens */
+    box-sizing: border-box;
+    min-height: 340px; /* Changed to min-height to allow cards to expand if content is larger */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Prevents content from spilling out */
+}
+
+.card img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 5px;
+}
+
+.card h2, .card p {
+    color: #fff;
+    word-wrap: break-word; /* Ensures that the text breaks properly inside the card */
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9em; /* Slightly reduced to help fit the text */
+    margin-top: 5px;
+}
+
+.no-results-message {
+    background: rgba(3, 32, 60, 0.5);
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 1.4em; /* Increased size for visibility */
+    text-align: center; }/* Center the text if it's on its own line */
