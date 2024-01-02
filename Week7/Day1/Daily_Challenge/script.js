@@ -34,6 +34,20 @@ console.log('\nInstantiate a second Video instance with different values:')
 const newVideo1 = new Video("SuperMan", "Egor", 6800)
 console.log(newVideo1.watch())
 
+console.log('\nDaily Challenge : Creating Objects - Bonus\n\n');
 // Bonus: Use an array to store data for five Video instances (ie. title, uploader, time)
 // Think of the best data structure to save this information within the array.
+
+const videosData = [
+    { title: "The Matrix", uploader: "Alice", time: 5400 },
+    { title: "Inception", uploader: "Bob", time: 4800 },
+    { title: "Interstellar", uploader: "Charlie", time: 10200 },
+    { title: "The Dark Knight", uploader: "Dave", time: 7200 },
+    { title: "Pulp Fiction", uploader: "Eve", time: 6600 }
+];
+
 // Bonus: Loop through the array to instantiate those instances.
+videosData.forEach(videoData => {
+    const video = new Video(videoData.title, videoData.uploader, videoData.time);
+    console.log(video.watch());
+});
