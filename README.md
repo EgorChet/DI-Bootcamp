@@ -46,6 +46,6 @@ I'll share my journey 🛤, including learning experiences, challenges overcome,
 I'm excited to connect with fellow learners and professionals:
 
 - **LinkedIn**: [My LinkedIn](Your-LinkedIn-URL)
-- **GitHub**: [My GitHub](Your-GitHub-URL)
+- **Phone Number**: [0538410298]
 
 Let's navigate the tech world together! 🚀
