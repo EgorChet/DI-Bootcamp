@@ -1,71 +1,71 @@
 body {
-    font-family: monospace, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url(https://img.freepik.com/premium-photo/womens-minimal-fashion-pastel-clothes-stylish-female-blouses-sweaters-pants-jeans-tshirts-handbags-hanger-white_408798-1703.jpg?w=2000);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    background-size: 2000px 2000px;
+  font-family: monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://img.freepik.com/premium-photo/womens-minimal-fashion-pastel-clothes-stylish-female-blouses-sweaters-pants-jeans-tshirts-handbags-hanger-white_408798-1703.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-size: 2000px 2000px;
 }
 
-nav{
-    background-color: black;
-    height: 8vh;
+nav {
+  background-color: black;
+  height: 8vh;
 }
 
-ul{
-    float: right;
-    width: 30%;
-    padding: 0.7%;
+ul {
+  float: right;
+  width: 30%;
+  padding: 0.7%;
 }
 
-li{
-    display: inline;
+li {
+  display: inline;
 }
 
 li a {
-    margin-right: 20%;
-    text-decoration: none;
-    color: white;
-    float: right;
-    font-size: 1vw;
+  margin-right: 20%;
+  text-decoration: none;
+  color: white;
+  float: right;
+  font-size: 1vw;
 }
 
 #logo {
-    margin-top: 2%;
-    margin-left: 2%;
+  margin-top: 2%;
+  margin-left: 2%;
 }
 
-p{
-    position: relative;
-    width: 40%;
-    font-size: 2vw;
-    left: 55vw;
-    top: 20vw;
-    text-align: center;
+p {
+  position: relative;
+  width: 40%;
+  font-size: 2vw;
+  left: 55vw;
+  top: 20vw;
+  text-align: center;
 }
 
 /* footer */
 
 .footer {
-    font-family: monospace, sans-serif;
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    color: white;
-  }
-  
-  .iconwrap {
-    padding-top: 1vw;
-    margin: 1%;
-    margin-bottom: 2%;
-  }
-  
-  .iconwrap a {
-    margin: 1vw;
-  }
+  font-family: monospace, sans-serif;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+
+.iconwrap {
+  padding-top: 1vw;
+  margin: 1%;
+  margin-bottom: 2%;
+}
+
+.iconwrap a {
+  margin: 1vw;
+}

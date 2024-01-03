@@ -4,11 +4,11 @@
 }
 
 body {
-    background-image: url('https://user-images.githubusercontent.com/30896388/168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
+  background-image: url("https://user-images.githubusercontent.com/30896388/168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 nav {
   background-color: black;
@@ -35,7 +35,7 @@ li {
 
 li a {
   font-size: 2.5vw;
-  font-family: 'Marvel', sans-serif;
+  font-family: "Marvel", sans-serif;
   color: white;
   text-decoration: none;
 }
@@ -44,28 +44,28 @@ li a:hover {
   background-color: #9326a6;
 }
 
-  h1 {
-    font-family: 'Marvel', sans-serif;
-    color: whitesmoke;
-    padding-left: 5vw;
-    padding-top: 22vw;
-    letter-spacing: 0.25vw;
-    font-size: 10vw;
-    font-weight: bold;
-  }
+h1 {
+  font-family: "Marvel", sans-serif;
+  color: whitesmoke;
+  padding-left: 5vw;
+  padding-top: 22vw;
+  letter-spacing: 0.25vw;
+  font-size: 10vw;
+  font-weight: bold;
+}
 
-  .text {
-    font-style: italic;
-    font-family: 'Marvel', sans-serif;
-    color: whitesmoke;
-    font-size: 2vw;
-    position: absolute;
-    width: 45%;
-    margin-left: 5%;
-  }
+.text {
+  font-style: italic;
+  font-family: "Marvel", sans-serif;
+  color: whitesmoke;
+  font-size: 2vw;
+  position: absolute;
+  width: 45%;
+  margin-left: 5%;
+}
 
 .footer {
-  font-family: 'Marvel', sans-serif;
+  font-family: "Marvel", sans-serif;
   background-color: black;
   position: fixed;
   width: 100%;
@@ -94,13 +94,13 @@ li a:hover {
    480-less    - phone landscape & smaller
 --------------------------------------------*/
 
-@media all and (min-width: 1200px) and (max-width: 2000px) { 
-  nav{
+@media all and (min-width: 1200px) and (max-width: 2000px) {
+  nav {
     background-color: black;
     color: white;
   }
 
-  li a{
+  li a {
     color: white;
     text-decoration: none;
   }
@@ -109,40 +109,40 @@ li a:hover {
 @media all and (min-width: 992px) and (max-width: 1200px) {
   .inline {
     display: inline-block;
-  } 
-  nav{
+  }
+  nav {
     background-color: red;
   }
-  li a{
+  li a {
     color: white;
     text-decoration: none;
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 992px) { 
-  h1{
+@media all and (min-width: 768px) and (max-width: 992px) {
+  h1 {
     font-size: 35px;
   }
-  nav{
+  nav {
     background-color: lightgreen;
   }
-  li a{
+  li a {
     color: black;
     text-decoration: none;
   }
 }
 
-@media all and (min-width: 600px) and (max-width: 768px) { 
-  nav{
+@media all and (min-width: 600px) and (max-width: 768px) {
+  nav {
     background-color: yellow;
   }
 
-  li a{
+  li a {
     color: black;
     text-decoration: none;
   }
 
-  h1{
+  h1 {
     font-size: 25px;
   }
 }

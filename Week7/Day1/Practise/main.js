@@ -1,8 +1,8 @@
-let formvalues = {}
+let formvalues = {};
 
 function handleInput(e) {
-    formvalues[e.target.name] = e.target.value;
-    console.log(formvalues);
+  formvalues[e.target.name] = e.target.value;
+  console.log(formvalues);
 }
 
 // function handleInputPassword(e) {

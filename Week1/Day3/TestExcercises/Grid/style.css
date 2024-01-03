@@ -1,39 +1,29 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid grid-template-rows: 1fr 1fr;
-    gap: 20px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 5px;
 }
 
 div {
-    text-align: center;
-    background-color: aqua;
+  text-align: center;
+  background-color: aqua;
 }
 
-.div1{
-
+.div1 {
 }
 
-.div2{
-
+.div2 {
 }
 
-.div3{
-
+.div3 {
 }
 
-.div4{
-
+.div4 {
 }
 
-.div5{
-
+.div5 {
 }
 
-.div6{
-
+.div6 {
 }
-
-
-
-

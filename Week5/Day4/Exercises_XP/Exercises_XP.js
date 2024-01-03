@@ -1,4 +1,5 @@
-const horizontalLine = "\x1b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\x1b[0m";
+const horizontalLine =
+  "\x1b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\x1b[0m";
 // // 🌟 Exercise 1 : List Of People
 // // Part1
 // console.log('Exercise 1 Part 1')
@@ -99,7 +100,6 @@ const horizontalLine = "\x1b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 //     console.log(`My ${i + 1}${suffix} choice is ${favouriteColors[i]}`);
 // };
 
-
 // // 🌟 Exercise 3 : Repeat The Question
 // console.log('\nExercise 3 : Repeat The Question');
 
@@ -121,7 +121,7 @@ const horizontalLine = "\x1b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 
 // console.log("Thank you, your number is:", number);
 
-// // THIS IS THE VERSION I DID LAST WEEK IT IS MADE TO BE USED IN TERMINAL 
+// // THIS IS THE VERSION I DID LAST WEEK IT IS MADE TO BE USED IN TERMINAL
 // // const readline = require('readline');
 
 // // // Create an interface for input and output

@@ -11,7 +11,6 @@
 //   element % 2 === 0 && console.log(element)
 // })
 
-
 // const myArr = [1, 2, 3, 4, 5, 6, 7, 8];
 // myArr.some((element) => {
 //     element % 2 === 0
@@ -20,31 +19,29 @@
 // //1st example
 // const myArr = [1, 2, 3, 4, 5, 6, 7, 8];
 // myArr.some((value)=> { return (value%2 == 0); });
-// //output : true 
+// //output : true
 // //because there is at least one even number in the array
 
 // //2nd example
 // myArr.some((value)=> { return (value < 0); });
-// //output: false 
+// //output: false
 // //because there is no negative number in the array
 
 // //If the arrow function is only returning a value you don't need the return keyword
 // //If the arrow function takes only one parameter you can omit the parentheses
 // myArr.some(value => value < 0 );
-// //output: false 
+// //output: false
 // //because there is no negative number in the array
 
 // //3rd example
 // function isEven(x) {
-//   console.log(x) 
+//   console.log(x)
 //   return (x % 2 == 0);
 // }
 
 // myArr.some((value) => isEven(value));
 // //output : 1 2 true
-// //stops iterating as soon as an even number is found 
-
-
+// //stops iterating as soon as an even number is found
 
 // // EXERCISE
 // // My Version
@@ -70,7 +67,6 @@
 // })
 
 // console.log(returnedEvery)
-
 
 // const words = ["hello", "hey", "hola"];
 // wordsEvery = words.every((element)=> {
@@ -105,7 +101,6 @@
 // console.log(newArr)
 
 // Map returns a new array with manipulated elements
-
 
 // Filter
 
@@ -142,6 +137,5 @@
 //     }
 //     return acc;  // Acts like an 'else' because it returns only if the 'if' condition was false
 // }, 0);
-
 
 // console.log(totalCalories);

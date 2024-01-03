@@ -15,11 +15,13 @@ DI Bootcamp offers an intensive, hands-on experience. Over these 12 weeks, I'm e
 Here are some of the major projects I've worked on, detailing my learning process 🤔, challenges faced 😵, and solutions implemented 💡.
 
 ### 📌 Project 1: [Project Name]
+
 - **Description**: [Brief description]
 - **Key Learnings**: [What I learned]
 - **Technologies Used**: [List of technologies]
 
 ### 📌 Project 2: [Project Name]
+
 - **Description**: [Brief description]
 - **Key Learnings**: [What I learned]
 - **Technologies Used**: [List of technologies]

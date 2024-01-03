@@ -1,170 +1,161 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: monospace, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace, sans-serif;
 }
 
 p {
-    font-size: 3vw;
-    padding-top: 10%;
-    text-align: center;
+  font-size: 3vw;
+  padding-top: 10%;
+  text-align: center;
 }
 
 .pgrow {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .container {
-    height: 750px;
-    display: grid;
-    gap: 30px;
-    grid-template-areas: 
+  height: 750px;
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
     "a b c d"
     "e f g h"
     "i i i i";
 }
 
 div {
-    font-size: 2vw;
-    text-align: center;
-    color: white;
-    height: 230px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top:  30px;
-    transition:all 0.3s ease;
-    border-radius: 25px;
+  font-size: 2vw;
+  text-align: center;
+  color: white;
+  height: 230px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  transition: all 0.3s ease;
+  border-radius: 25px;
 }
 
-.fade{
-    background-color: grey;
-    grid-area: a;
-    opacity:0.5;
+.fade {
+  background-color: grey;
+  grid-area: a;
+  opacity: 0.5;
 }
 
-.fade:hover
-{
- opacity:1;
+.fade:hover {
+  opacity: 1;
 }
 
-.color{
-    background-color: red;
-    grid-area: b;
+.color {
+  background-color: red;
+  grid-area: b;
 }
 
-.color:hover
-{
- background:#53a7ea;
+.color:hover {
+  background: #53a7ea;
 }
 
-.shrink{
-    background-color: aqua;
-    grid-area: c;
+.shrink {
+  background-color: aqua;
+  grid-area: c;
 }
 
-.shrink:hover
-{
- -webkit-transform: scale(0.8);
- -ms-transform: scale(0.8);
- transform: scale(0.8);
+.shrink:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
-.rotate{
-    background-color: yellow;
-    grid-area: d;
+.rotate {
+  background-color: yellow;
+  grid-area: d;
 }
 
-.rotate:hover
-{
- -webkit-transform: rotateZ(-30deg);
- -ms-transform: rotateZ(-30deg);
- transform: rotateZ(-30deg);
+.rotate:hover {
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
 }
 
 .circle {
-    background-color: purple;
-    grid-area: e;
+  background-color: purple;
+  grid-area: e;
 }
 
-.circle:hover
-{
- border-radius:50%;
+.circle:hover {
+  border-radius: 50%;
 }
 
 .shadow {
-    background-color: peru;
-    grid-area: f;
+  background-color: peru;
+  grid-area: f;
 }
 
-.shadow:hover
-{
- box-shadow:
- 3px 3px #53a7ea,
- 6px 6px #53a7ea,
- 9px 9px #53a7ea;
- -webkit-transform: translateX(-10px);
- transform: translateX(-10px);
+.shadow:hover {
+  box-shadow:
+    3px 3px #53a7ea,
+    6px 6px #53a7ea,
+    9px 9px #53a7ea;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 
 .swing {
-    background-color: greenyellow;
-    grid-area: g;
+  background-color: greenyellow;
+  grid-area: g;
 }
 
 @-webkit-keyframes swing {
-    15% {
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
-    }
-    30% {
-        -webkit-transform: translateX(-10px);
-        transform: translateX(-10px);
-    }
-    50% {
-        -webkit-transform: translateX(6px);
-        transform: translateX(6px);
-    }
-    65% {
-        -webkit-transform: translateX(-6px);
-        transform: translateX(-6px);
-    }
-    80% {
-        -webkit-transform: translateX(4px);
-        transform: translateX(4px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
+  15% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  30% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  50% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  65% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  80% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 .swing:hover {
-    -webkit-animation: swing 1s ease;
-    animation: swing 1s ease;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
-
 
 .border {
-    background-color: black;
-    grid-area: h;
+  background-color: black;
+  grid-area: h;
 }
 
-.border:hover
-{
- box-shadow: inset 0 0 0 25px #53a7ea;
+.border:hover {
+  box-shadow: inset 0 0 0 25px #53a7ea;
 }
 
 .grow {
-    height: 150px;
-    background-color: rgb(255, 35, 109);
-    grid-area: i;
+  height: 150px;
+  background-color: rgb(255, 35, 109);
+  grid-area: i;
 }
 
-.grow:hover
-{
- -webkit-transform: scale(2);
- -ms-transform: scale(2);
- transform: scale(2);
+.grow:hover {
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
 }

@@ -1,117 +1,118 @@
 /* Reset margins and padding to provide a clean layout */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f5f5f5; /* Add a light background color */
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5; /* Add a light background color */
 }
 
 /* Style for the navigation bar */
 nav {
-    background-color: #fff; /* White background */
-    padding: 1rem 2rem; /* Padding for spacing */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #fff; /* White background */
+  padding: 1rem 2rem; /* Padding for spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    margin-left: 8vw;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    font-size: 1.5rem; /* Larger font size for the logo */
+  margin-left: 8vw;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem; /* Larger font size for the logo */
 }
 
 .sign-in-button {
-    background-color: #007bff; /* Bootstrap primary blue */
-    color: white;
-    padding: 10px 15px;
-    margin-right: 8vw;
-    text-decoration: none;
-    border-radius: 5px; /* Rounded corners for the button */
-    font-size: 0.875rem;
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  padding: 10px 15px;
+  margin-right: 8vw;
+  text-decoration: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 .sign-in-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Style for the hero section */
 .hero {
-    text-align: center;
-    padding: 10rem 8rem;
-    color: black; /* Black text for contrast */
-    background-image: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=800'); /* Adjust the path as needed */
-    background-size: cover; /* Cover the entire viewport without stretching */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+  text-align: center;
+  padding: 10rem 8rem;
+  color: black; /* Black text for contrast */
+  background-image: url("https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=800"); /* Adjust the path as needed */
+  background-size: cover; /* Cover the entire viewport without stretching */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
 }
 
-h1{
-    margin: 2vw 15vw;
+h1 {
+  margin: 2vw 15vw;
 }
 
 .hero h1 {
-    margin-bottom: 2rem; /* Add more space below the headline */
-    font-size: 2.5rem; /* Larger font size for the headline */
+  margin-bottom: 2rem; /* Add more space below the headline */
+  font-size: 2.5rem; /* Larger font size for the headline */
 }
 
-.signup-input[type=email] {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px; /* Rounded corners for the input */
-    width: 350px; /* Fixed width for the email input */
+.signup-input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px; /* Rounded corners for the input */
+  width: 350px; /* Fixed width for the email input */
 }
 
 .signup-button {
-    background-color: #007bff; /* Bootstrap success blue */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px; /* Rounded corners for the button */
-    cursor: pointer;
-    font-size: 1rem;
+  background-color: #007bff; /* Bootstrap success blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .signup-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Style for the features section */
 .features {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Wrap items for responsiveness */
-    gap: 1rem; /* Space between feature items */
-    padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap items for responsiveness */
+  gap: 1rem; /* Space between feature items */
+  padding: 2rem;
 }
 
 .feature-item {
-    width: calc(33.333% - 1rem); /* Divide space into thirds, accounting for gap */
-    text-align: center;
-    padding: 1rem;
-    background: white; /* White background for feature items */
-    border-radius: 5px; /* Rounded corners for the feature items */
+  width: calc(
+    33.333% - 1rem
+  ); /* Divide space into thirds, accounting for gap */
+  text-align: center;
+  padding: 1rem;
+  background: white; /* White background for feature items */
+  border-radius: 5px; /* Rounded corners for the feature items */
 }
 
 .feature-item h2 {
-    color: black; /* Blue text for feature headings */
-    margin: 1rem 0; /* Spacing above and below heading */
+  color: black; /* Blue text for feature headings */
+  margin: 1rem 0; /* Spacing above and below heading */
 }
 
 .feature-item a {
-    text-decoration: none; /* Removes the underline from the links */
-    color: inherit; /* Inherits the text color from the parent element */
-    display: block; /* Allows the link to fill the entire space of its container */
-    height: 100%; /* Ensures the link covers the entire area of the feature item for clicking */
+  text-decoration: none; /* Removes the underline from the links */
+  color: inherit; /* Inherits the text color from the parent element */
+  display: block; /* Allows the link to fill the entire space of its container */
+  height: 100%; /* Ensures the link covers the entire area of the feature item for clicking */
 }
 /* Add any additional styles for other elements as needed */
-

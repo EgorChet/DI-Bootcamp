@@ -26,7 +26,6 @@
 //     </body>
 //     </html>
 
-
 // Copy the code above, to a structured HTML file.
 // In your Javascript file, use setInterval to move the <div id="animate"> to the right side of the <div id="container">, when the button is clicked on.
 // The <div id="animate"> should move 1px to the right every milisecond, until it reaches the end of the <div id="container">.
@@ -34,22 +33,22 @@
 // Hint : check out the demonstration in the Course Noted named JS Functions
 
 function myMove() {
-    // Get the elements
-    let animate = document.getElementById("animate");
-  
-    // Starting position of the box
-    let position = 0;
-  
-    // Update the position every millisecond
-    let interval = setInterval(frame, 1);
-  
-    function frame() {
-      if (position == 350) { // Stop at 350px
-        clearInterval(interval);
-      } else {
-        position++; 
-        animate.style.left = position + 'px'; // Move box to the right
-      }
+  // Get the elements
+  let animate = document.getElementById("animate");
+
+  // Starting position of the box
+  let position = 0;
+
+  // Update the position every millisecond
+  let interval = setInterval(frame, 1);
+
+  function frame() {
+    if (position == 350) {
+      // Stop at 350px
+      clearInterval(interval);
+    } else {
+      position++;
+      animate.style.left = position + "px"; // Move box to the right
     }
   }
-  
+}

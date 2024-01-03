@@ -1,79 +1,74 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px 5px;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
     "red1 blue1 blue2"
     "red2 blue3 blue4"
     "red3 blue5 blue6"
-    "yellow1 yellow2 yellow3"
-    
-    ;
+    "yellow1 yellow2 yellow3";
 }
 
 div {
 }
 
-.div1{
-    grid-area: red1;
-    background-color: red;
+.div1 {
+  grid-area: red1;
+  background-color: red;
 }
 
-.div2{
-    background-color: blue;
-    grid-area: blue1;
+.div2 {
+  background-color: blue;
+  grid-area: blue1;
 }
 
-.div3{
-    background-color: blue;
-    grid-area: blue2;
+.div3 {
+  background-color: blue;
+  grid-area: blue2;
 }
 
-.div4{
-    background-color: red;
-    grid-area: red2;
+.div4 {
+  background-color: red;
+  grid-area: red2;
 }
 
-.div5{
-    background-color: blue;
-    grid-area: blue3;
+.div5 {
+  background-color: blue;
+  grid-area: blue3;
 }
 
-.div6{
-    background-color: blue;
-    grid-area: blue4;
+.div6 {
+  background-color: blue;
+  grid-area: blue4;
 }
 
-.div7{
-    background-color: red;
-    grid-area: red3;
+.div7 {
+  background-color: red;
+  grid-area: red3;
 }
 
-.div8{
-    background-color: blue;
-    grid-area: blue5;
+.div8 {
+  background-color: blue;
+  grid-area: blue5;
 }
 
-.div9{
-    background-color: blue;
-    grid-area: blue6;
+.div9 {
+  background-color: blue;
+  grid-area: blue6;
 }
 
-.div10{
-    grid-area: yellow1;
-    background-color: yellow;
+.div10 {
+  grid-area: yellow1;
+  background-color: yellow;
 }
 
-.div11{
-    background-color: yellow;
-    grid-area: yellow2;
+.div11 {
+  background-color: yellow;
+  grid-area: yellow2;
 }
 
-.div12{
-    background-color: yellow;
-    grid-area: yellow3;
+.div12 {
+  background-color: yellow;
+  grid-area: yellow3;
 }
-
-
-

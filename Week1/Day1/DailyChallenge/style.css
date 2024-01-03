@@ -4,11 +4,11 @@
 }
 
 body {
-    background-image: url('https://user-images.githubusercontent.com/30896388/168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
+  background-image: url("https://user-images.githubusercontent.com/30896388/168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 nav {
   background-color: black;
@@ -35,7 +35,7 @@ li {
 
 li a {
   font-size: 2.5vw;
-  font-family: 'Marvel', sans-serif;
+  font-family: "Marvel", sans-serif;
   color: white;
   text-decoration: none;
 }
@@ -44,28 +44,28 @@ li a:hover {
   background-color: #9326a6;
 }
 
-  h1 {
-    font-family: 'Marvel', sans-serif;
-    color: whitesmoke;
-    padding-left: 5vw;
-    padding-top: 22vw;
-    letter-spacing: 0.25vw;
-    font-size: 10vw;
-    font-weight: bold;
-  }
+h1 {
+  font-family: "Marvel", sans-serif;
+  color: whitesmoke;
+  padding-left: 5vw;
+  padding-top: 22vw;
+  letter-spacing: 0.25vw;
+  font-size: 10vw;
+  font-weight: bold;
+}
 
-  .text {
-    font-style: italic;
-    font-family: 'Marvel', sans-serif;
-    color: whitesmoke;
-    font-size: 2vw;
-    position: absolute;
-    width: 45%;
-    margin-left: 5%;
-  }
+.text {
+  font-style: italic;
+  font-family: "Marvel", sans-serif;
+  color: whitesmoke;
+  font-size: 2vw;
+  position: absolute;
+  width: 45%;
+  margin-left: 5%;
+}
 
 .footer {
-  font-family: 'Marvel', sans-serif;
+  font-family: "Marvel", sans-serif;
   background-color: black;
   position: fixed;
   width: 100%;
@@ -85,4 +85,3 @@ li a:hover {
 .iconwrap a {
   margin: 1vw;
 }
-

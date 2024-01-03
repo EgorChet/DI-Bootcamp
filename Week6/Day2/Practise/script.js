@@ -6,7 +6,6 @@
 
 // checkYear()
 
-
 // const calculator = (num1, num2, operator) => {
 //     return operator === "+"
 //     ? num1 + num2
@@ -24,7 +23,6 @@
 // console.log(calculator(1, 2, '*'));
 // console.log(calculator(1, 2, '/'));
 // console.log(calculator(1, 2, 'asasasasa'));
-
 
 // function outside(x) {
 //   function inside(y) {
@@ -58,17 +56,15 @@
 
 // // Таким образом, замыкания позволяют "запомнить" и использовать значения переменных из вышестоящей функции даже после того, как эта функция завершила выполнение. Это мощная особенность JavaScript, которая широко используется для создания приватных переменных, написания функций высшего порядка и других задач.
 
-
-
 // let add = (function () {
 //     let counter = 0;
 //     function calculus() {
-//         counter += 1; 
+//         counter += 1;
 //         return counter
 //     }
 //     return calculus
 //   })();
-  
+
 //   console.log(add());
 //   console.log(add());
 //   console.log(add());
@@ -119,23 +115,23 @@
 // }
 
 function makeUser(name, age) {
-    return {
-      name: name,
-      age: age,
-    };
-  }
-  
-  let user = makeUser("John", 30);
-  alert(user.name); // John
-  
-  // The same as
-  function makeUserShorthand(name, age) {
-    return {
-      name, // same as name: name
-      age,  // same as age: age
-      // ...
-    };
-  }
+  return {
+    name: name,
+    age: age,
+  };
+}
 
-  let user2 = makeUserShorthand("Egor", 30);
-  alert(user2.name); // John
+let user = makeUser("John", 30);
+alert(user.name); // John
+
+// The same as
+function makeUserShorthand(name, age) {
+  return {
+    name, // same as name: name
+    age, // same as age: age
+    // ...
+  };
+}
+
+let user2 = makeUserShorthand("Egor", 30);
+alert(user2.name); // John

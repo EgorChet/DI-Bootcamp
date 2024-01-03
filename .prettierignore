@@ -1,0 +1,15 @@
+# .prettierignore
+**/.DS_Store
+**/*.jpg
+**/*.png
+**/*.py
+**/*.sql
+**/*.env
+**/*.gitignore
+**/*.tsv
+**/*.csv
+**/*.tar
+**/*.ipynb
+**/*.pdf
+**/*.data.txt
+**/*.txt

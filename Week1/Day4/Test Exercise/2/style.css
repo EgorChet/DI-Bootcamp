@@ -1,8 +1,8 @@
 .container {
-    height: 600px;
-    width: 450px;
-    display: grid;
-    grid-template-areas:
+  height: 600px;
+  width: 450px;
+  display: grid;
+  grid-template-areas:
     "a a a a a a a a"
     "b b b c c c c c"
     "b b b c c c c c"
@@ -14,7 +14,7 @@
     "f f f f f f g g"
     "f f f f f f g g"
     "h h h h h h h h";
-    /* "a a a a a"
+  /* "a a a a a"
     "b b c c c"
     "b b c c c"
     "b b c c c"
@@ -27,61 +27,47 @@
     "h h h h h"; */
 }
 
-"a a a a a a a a"
-"b b b c c c c c"
-"b b b c c c c c"
-"b b b c c c c c"
-"d d d c c c c c"
-"d d d c c c c c"
-"d d d e e e e e"
-"d d d e e e e e"
-"f f f f f f g g"
-"f f f f f f g g"
-"h h h h h h h h";
-
 div {
 }
 
-.div1{
-    background-color: aqua;
-    grid-area: a;
+.div1 {
+  background-color: aqua;
+  grid-area: a;
 }
 
-.div2{
-    background-color: violet;
-    grid-area: b;
+.div2 {
+  background-color: violet;
+  grid-area: b;
 }
 
-.div3{
-    background-color: orange;
-    grid-area: c;
+.div3 {
+  background-color: orange;
+  grid-area: c;
 }
 
-.div4{
-    background-color: greenyellow;
-    grid-area: d;
+.div4 {
+  background-color: greenyellow;
+  grid-area: d;
 }
 
-.div5{
-
-    background-color: grey;
-    grid-area: e;
+.div5 {
+  background-color: grey;
+  grid-area: e;
 }
 
-.div6{
-
-    background-color: green;
-    grid-area: f;
+.div6 {
+  background-color: green;
+  grid-area: f;
 }
 
-.div7{
-    background-color: pink;
-    grid-area: g;
+.div7 {
+  background-color: pink;
+  grid-area: g;
 }
 
- .div8{
-    background-color: rgb(181, 107, 10);
-    grid-area: h;
+.div8 {
+  background-color: rgb(181, 107, 10);
+  grid-area: h;
 }
 
 /*
@@ -104,6 +90,3 @@ div {
     background-color: yellow;
     grid-area: yellow3;
 } */
-
-
-

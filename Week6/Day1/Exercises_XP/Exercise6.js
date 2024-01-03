@@ -6,10 +6,10 @@
 // Finally, append this updated list node to the unordered list (<ul>), using the appendChild method.
 
 // Select the div with id 'navBar'
-let div = document.getElementById('navBar');
+let div = document.getElementById("navBar");
 
 // Use setAttribute to change the id to 'socialNetworkNavigation'
-div.setAttribute('id', 'socialNetworkNavigation');
+div.setAttribute("id", "socialNetworkNavigation");
 
 // Console log to confirm the change
 console.log(div); // Should now show the div with the new id
@@ -18,13 +18,13 @@ console.log(div); // Should now show the div with the new id
 // First, create a new <li> tag (use the createElement method).
 
 // Select the <ul> within the <div id="socialNetworkNavigation">
-let ul = document.querySelector('#socialNetworkNavigation ul');
+let ul = document.querySelector("#socialNetworkNavigation ul");
 
 // Create a new <li> element
-let newLi = document.createElement('li');
+let newLi = document.createElement("li");
 
 // Create a new text node with "Logout" as its specified text
-let textNode = document.createTextNode('Logout');
+let textNode = document.createTextNode("Logout");
 
 // Append the text node to the newly created list node (<li>)
 newLi.appendChild(textNode);

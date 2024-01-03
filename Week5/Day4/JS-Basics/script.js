@@ -1,5 +1,3 @@
-
-
 // let selectedColors = ['red', 'blue'];
 // selectedColors[4] = 'green';
 // selectedColors[2] = 'yellow';
@@ -18,8 +16,6 @@
 
 // let longString = 'lorem lorem lorem lorem lorem lorem lorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem lorem';
 // console.log(longString.length);
-
-
 
 // Create a structured HTML file linked to a JS file
 // 1. Create these variables and give them values:
@@ -46,7 +42,6 @@
 // let globalAddressButBetter = `I live in ${addressStreet}${addressNumber}, in ${country}`
 // console.log(globalAddressButBetter)
 
-
 // console.log("isNaN is checking whether it is not a number ? if it is not output is True if it is output is False")
 // let op = 'me'
 // let num = 1
@@ -66,8 +61,6 @@
 
 // // 4. Display : "I will be NN in YYYY", substituting the values.
 // console.log(`I will be ${my_Age_In_Future_Year} in ${futureYear}`)
-
-
 
 // console.log(1 == '1'); // true (compares the value)
 // console.log(1 === '1'); // false (compares type and value)
@@ -97,10 +90,10 @@
 // users1.splice(3, 0, 'Andrey', 'Alex'); // starting from 3 remove 0 add Andrey and Alex
 // console.log(users1)
 
-// users1.slice(1, 2) // returns a new array 
-// console.log(users1) // nothing changed becuase it returns a new array but we did not save it 
+// users1.slice(1, 2) // returns a new array
+// console.log(users1) // nothing changed becuase it returns a new array but we did not save it
 
-// let slicedUsers1 = users1.slice(5, 7) 
+// let slicedUsers1 = users1.slice(5, 7)
 // console.log(slicedUsers1)
 
 // let users1String = users1.toString();
@@ -131,7 +124,6 @@
 // console.log(person.lname)
 // console.log(person.age)
 
-
 // // 1. Write a JavaScript for loop that will go through the variable names.
 
 // let names= ["john", "sarah", 23, "Rudolf",34]
@@ -143,7 +135,7 @@
 //     if (typeof names[i] !== 'string') {
 //         continue;
 //     }
-    
+
 //     // Check if the first letter is not uppercase
 //     if (names[i][0] !== names[i][0].toUpperCase()) {
 //         // Change the first letter to uppercase and concatenate with the rest of the string
@@ -157,24 +149,23 @@
 // for (let i in names) {
 //     if (typeof names[i] === 'string') {
 //         console.log(i)
-//     else continue 
+//     else continue
 //     }
 // }
 // // if the item is not a string, go out of the loop.
 // // if the item is a string, display it.
 
-
-let names= ["john", "sarah", 23, "Rudolf", 34];
+let names = ["john", "sarah", 23, "Rudolf", 34];
 
 for (let name of names) {
-    if (typeof name !== 'string') {
-        continue;  // Skip to the next item if the current item is not a string.
-    }
+  if (typeof name !== "string") {
+    continue; // Skip to the next item if the current item is not a string.
+  }
 
-    // If the first letter isn't uppercase, change it to uppercase.
-    if (name[0] !== name[0].toUpperCase()) {
-        name = name[0].toUpperCase() + name.slice(1);
-    }
+  // If the first letter isn't uppercase, change it to uppercase.
+  if (name[0] !== name[0].toUpperCase()) {
+    name = name[0].toUpperCase() + name.slice(1);
+  }
 
-    console.log(name);  // Print the name (with the first letter in uppercase if it was changed).
+  console.log(name); // Print the name (with the first letter in uppercase if it was changed).
 }

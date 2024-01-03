@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTTP REQUESTS BASICS</title>
+    <!-- <link rel="stylesheet" href="style.css"></link> -->
+  </head>
+  <body>
+    <h2>Get All Users</h2>
+    <form method="get" action="https://jsonplaceholder.typicode.com/users?">
+      <input type="submit" value="send" />
+    </form>
+    <h2>Get User By Id</h2>
+    <form method="get" action="https://jsonplaceholder.typicode.com/users?">
+      <input type="number" min="1" max="10" name="id" />
+      <input type="submit" value="send" />
+    </form>
+    <h2>All Posts</h2>
+    <form method="get" action="https://jsonplaceholder.typicode.com/posts?">
+      <input type="submit" value="send" />
+    </form>
+    <h2>Posts By User Id</h2>
+    <form method="get" action="https://jsonplaceholder.typicode.com/posts?">
+      <input type="number" min="1" max="10" name="userId" />
+      <input type="text" name="username" />
+      <input type="submit" value="send" />
+    </form>
+    <h2>Add Post to User</h2>
+    <form method="post" action="https://jsonplaceholder.typicode.com/posts?">
+      Title: <input type="text" name="title" /><br />
+      Body: <input type="text" name="body" /><br />
+      User id: <input type="number" name="userId" /><br />
+      <input type="submit" name="send" />
+    </form>
+
+    <h2>Get All Users</h2>
+    <form method="get" action="https://users-18kl.onrender.com/users">
+      <input type="submit" value="send" />
+    </form>
+    <!-- EXERCISE 1 -->
+    <h2>EXERCISE1 ADDING A USER</h2>
+    <form method="post" action="https://users-18kl.onrender.com/user">
+      Name: <input type="text" name="name" /><br />
+      Email: <input type="email" name="email" /><br />
+      Username: <input type="text" name="username" /><br />
+      <input type="submit" name="send" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Add a user 
+1. A from with post method
+2.Action with the new url https://users-18kl.onrender.com/user removing 's' at the end
+3. Input name => name
+4. Input name => email
+5. Input name => username
+6. Submit -->
+
+<!-- curl https://www.google.co.uk/
+wget https://www.google.co.uk/ -->

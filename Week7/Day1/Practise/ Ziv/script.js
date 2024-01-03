@@ -284,27 +284,25 @@ class Dog extends Animal {
   bark() {
     return `My ${this.name}, ${this.mydogname} bark`;
   }
-  makeSound(){
-    return 'how how'
+  makeSound() {
+    return "how how";
   }
-  getName(){
-    return this.mydogname
+  getName() {
+    return this.mydogname;
   }
   //setter
   setName(val) {
-    this.mydogname = val
+    this.mydogname = val;
   }
 }
 
-class Chinto extends Dog {
+class Chinto extends Dog {}
 
-}
-
-const myDog = new Dog('Dog', 'Tony');
-myDog.setName('Boby')
+const myDog = new Dog("Dog", "Tony");
+myDog.setName("Boby");
 let sound = myDog.bark();
 
-let soundanimal = myDog.makeSound()
+let soundanimal = myDog.makeSound();
 
 console.log(sound);
 console.log(soundanimal);

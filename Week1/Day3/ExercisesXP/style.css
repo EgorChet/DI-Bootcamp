@@ -1,149 +1,158 @@
-
 /* Header styling */
 
 body {
-    font-family: Georgia, Times, 'Times New Roman', serif,sans-serif, 'Poiret One';
-    width: 100%;
-    background-color: rgb(249, 249, 249);
-    border: dashed 1px pink;
-
+  font-family: Georgia, Times, "Times New Roman", serif, sans-serif,
+    "Poiret One";
+  width: 100%;
+  background-color: rgb(249, 249, 249);
+  border: dashed 1px pink;
 }
 
 img {
-    height: 180px;
-    border-bottom: solid orange 10px;
-    margin-bottom: 5%;
-    margin-right: 30px;
+  height: 180px;
+  border-bottom: solid orange 10px;
+  margin-bottom: 5%;
+  margin-right: 30px;
 }
 
 .cv_header {
-    display: flex;
-    justify-content: space-between;
-    margin: 2% 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 5% 0 5%;
 }
 
 h1 {
-    font-family: 'Poiret One';
-    letter-spacing: 0.8vw;
-    font-size: 3vw;
+  font-family: "Poiret One";
+  letter-spacing: 0.8vw;
+  font-size: 3vw;
 }
 .name_section {
-    margin-left: 10%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 30%;
+  margin-left: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
 }
 
 .profession {
-    font-size: 2vw;
-    font-family: 'Poiret One';
-    margin-top: -10px;
+  font-size: 2vw;
+  font-family: "Poiret One";
+  margin-top: -10px;
 }
 
 .header_hr {
-    border: none;
-    height: 3px;
-    background-color: grey;
-    background-image: linear-gradient(to right, rgb(189, 175, 175), rgb(99, 96, 96));
+  border: none;
+  height: 3px;
+  background-color: grey;
+  background-image: linear-gradient(
+    to right,
+    rgb(189, 175, 175),
+    rgb(99, 96, 96)
+  );
 }
 
 /* Main Section Styling */
 
 .yellowhr {
-    border: none;
-    margin-top: -20px;
-    margin-left: 0;
-    height: 2px;
-    width: 30px;
-    background-color: orange;
+  border: none;
+  margin-top: -20px;
+  margin-left: 0;
+  height: 2px;
+  width: 30px;
+  background-color: orange;
 }
 
 section {
-    background-color: rgb(249, 249, 249);
+  background-color: rgb(249, 249, 249);
 }
 
-h2, h3, h4 {
-    text-transform: uppercase;
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
 }
 
 h3 {
-    font-size: larger;
+  font-size: larger;
 }
 
 .main_info {
-    background-color: grey;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 2fr;
-    gap: 0 3px;
-    background-image: linear-gradient(to right, rgb(189, 175, 175), rgb(99, 96, 96));
-    margin: 0% 4% 0% 4%;
-    line-height: 2.0;
-   
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 0 3px;
+  background-image: linear-gradient(
+    to right,
+    rgb(189, 175, 175),
+    rgb(99, 96, 96)
+  );
+  margin: 0% 4% 0% 4%;
+  line-height: 2;
 }
 
 .languages {
-    font-family: 'Poiret One';
-    font-size: 1.5vw;
+  font-family: "Poiret One";
+  font-size: 1.5vw;
 }
 
-
 .edutext {
-    margin-top: -3%;
+  margin-top: -3%;
 }
 
 .skill {
-    text-align: center;
-    margin-top: 25px;
-    color: grey;
-    font-weight: bold;
-    font-size: 2vw;
+  text-align: center;
+  margin-top: 25px;
+  color: grey;
+  font-weight: bold;
+  font-size: 2vw;
 }
 
 .skills {
-    font-family: 'Poiret One';
-    position: relative;
-    right: 35px;
+  font-family: "Poiret One";
+  position: relative;
+  right: 35px;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+  text-decoration: none;
+  color: black;
+  transition:
+    color 0.3s ease,
+    text-decoration 0.3s ease;
 }
 
 li a:hover {
-    text-shadow: 1px 1px 2px #3498db;
+  text-shadow: 1px 1px 2px #3498db;
 }
 
 h4 {
-    margin-bottom: -2%;
+  margin-bottom: -2%;
 }
 
 .contacts {
-    margin-bottom: 15%;
+  margin-bottom: 15%;
 }
 
 .contact {
-    font-size: 1.2vw;
-    margin-top: 3%;
-    margin-bottom: 3%;
+  font-size: 1.2vw;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .profile {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 .workexp {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 /* .EduSki {
