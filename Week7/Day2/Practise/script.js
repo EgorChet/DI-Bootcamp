@@ -57,6 +57,10 @@ console.log(parseJSON(jsonString)); // Should successfully parse and return an o
 const invalidJsonString = '{name: "John", age: 30}'; // Missing quotation marks
 console.log(parseJSON(invalidJsonString)); // Should return
 
+
+
+
+
 // Task 2: Find the smallest distance between 2 numbers in an array
 function findSmallestDistance(arr) {
   let minDistance = Infinity; // Start with the largest possible number
