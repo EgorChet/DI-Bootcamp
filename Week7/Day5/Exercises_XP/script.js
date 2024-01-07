@@ -30,6 +30,8 @@
 // You can use any of these animation icons for the loading message.
 // Fontawesome link :
 // https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+// 4. If there is an error getting the data, display a message as follows:
+// 5. You can use your own css to style the website as you see fit
 
 document.getElementById('findPerson').addEventListener('click', async function() {
     const loadingDiv = document.querySelector('.loading');
@@ -60,7 +62,7 @@ document.getElementById('findPerson').addEventListener('click', async function()
       
       // Display character info
       characterInfoDiv.innerHTML = `
-        <h1>${person.name}</h1>
+        <p class="bigp">${person.name}</p>
         <p>Height: ${person.height}</p>
         <p>Gender: ${person.gender}</p>
         <p>Birth Year: ${person.birth_year}</p>
@@ -71,12 +73,3 @@ document.getElementById('findPerson').addEventListener('click', async function()
       characterInfoDiv.innerHTML = `<p>Error loading data.</p>`;
     }
   });
-  
-
-
-// 4. If there is an error getting the data, display a message as follows:
-
-
-
-
-// 5. You can use your own css to style the website as you see fit

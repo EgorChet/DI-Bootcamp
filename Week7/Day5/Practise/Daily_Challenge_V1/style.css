@@ -1,0 +1,109 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  line-height: 1.6;
+  display: flex;
+  align-items: center; /* Keeps content vertically centered */
+  justify-content: center;
+  min-height: 90vh; /* Allows some space above and below the container */
+  padding: 40px; /* Adds some padding around the edges of the viewport */
+}
+
+/* Main Container */
+.main-container {
+  width: 100%;
+  max-width: 500px; /* Increases the width */
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h1 {
+  color: #0a2540;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #394b59;
+  font-weight: 600;
+}
+
+/* Form Elements Styled Uniformly */
+select,
+input,
+button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #1f2937;
+  background-color: #f8fafc;
+}
+
+/* Buttons */
+button {
+  background: #1e40af;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #1c366b;
+}
+
+/* Result Styling */
+#result {
+  padding: 25px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Switch Button Style */
+#switchButton {
+  background-color: #64748b;
+  margin-bottom: 0px;
+}
+
+#switchButton:hover {
+  background-color: #475569;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .main-container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  body {
+    padding: 20px;
+    min-height: 80vh; /* Gives more space at the top and bottom on smaller screens */
+  }
+}
