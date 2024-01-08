@@ -1,0 +1,1 @@
+copied content from source.txt => I am source file that is meant to be copied to destintation.txt

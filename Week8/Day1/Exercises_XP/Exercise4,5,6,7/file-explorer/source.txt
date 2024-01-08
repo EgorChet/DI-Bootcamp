@@ -1,0 +1,1 @@
+I am source file that is meant to be copied to destintation.txt
