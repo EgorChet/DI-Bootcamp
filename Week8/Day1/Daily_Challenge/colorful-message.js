@@ -4,5 +4,6 @@ function displayColorfulMessage(message) {
   console.log(chalk.blue(message));
 }
 
-export default displayColorfulMessage;
+// displayColorfulMessage("Hello There Why Am I Printed?");
 
+export default displayColorfulMessage;

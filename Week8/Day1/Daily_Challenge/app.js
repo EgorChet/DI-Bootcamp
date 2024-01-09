@@ -5,5 +5,4 @@
 import greet from "./greeting.js";
 import displayColorfulMessage from "./colorful-message.js";
 
-const greeting = greet("John");
-displayColorfulMessage(greeting);
+displayColorfulMessage(greet("John"));

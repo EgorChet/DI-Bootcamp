@@ -1,0 +1,15 @@
+{
+  "name": "daily_challenge",
+  "version": "1.0.0",
+  "description": "Daily Challenge: Emoji Guessing Game Last Updated: October 16th, 2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
