@@ -1,8 +1,9 @@
 {
-  "name": "daily_challenge",
+  "name": "emojis",
   "version": "1.0.0",
-  "description": "Daily Challenge: Emoji Guessing Game Last Updated: October 16th, 2023",
+  "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
