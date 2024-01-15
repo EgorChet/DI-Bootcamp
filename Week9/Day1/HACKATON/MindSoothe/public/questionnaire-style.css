@@ -1,0 +1,102 @@
+/* questionnaire-style.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    font-size: 16px;
+    padding-top: 50px; /* Added padding to the top */
+    display: block; /* Changed from flex to block */
+    min-height: 100vh; /* Changed from height to min-height */
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    margin: 15px auto; /* Center the container */
+    text-align: center; /* Center the text inside the container */
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="number"],
+select,
+fieldset label {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3f51b5;
+}
+
+#recommendationDisplay {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+#recommendationDisplay h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#recommendationDisplay p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    margin: 15px;
+    width: 90%;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="questionnaire-style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Questionnaire</h1>
+      <form id="questionnaire-form">
+        <!-- Question 1 -->
+        <label for="stress-level">Stress Level (Scale 1-5):</label><br />
+        <input type="number" id="stress-level" name="stress-level" min="1" max="5" required /><br />
+
+        <!-- Question 2 -->
+        <label for="sleep-quality">Sleep Quality (Scale 1-5):</label><br />
+        <input type="number" id="sleep-quality" name="sleep-quality" min="1" max="5" required /><br />
+
+        <!-- Question 3 -->
+        <label for="exercise-frequency">Exercise Frequency (Scale 1-7 Days/Week):</label><br />
+        <input type="number" id="exercise-frequency" name="exercise-frequency" min="0" max="7" required /><br />
+
+        <!-- Question 4 (Radio Buttons) -->
+        <fieldset>
+          <legend>Main Source of Stress:</legend>
+          <label>
+            <input type="radio" name="source-of-stress" value="job-situation" required />
+            Job Situation
+          </label><br />
+          <label>
+            <input type="radio" name="source-of-stress" value="family-relations" required />
+            Family Relations
+          </label><br />
+          <label>
+            <input type="radio" name="source-of-stress" value="world-events" required />
+            Current World Events
+          </label><br />
+          <label>
+            <input type="radio" name="source-of-stress" value="personal-issues" required />
+            Personal Issues
+          </label><br />
+          <label>
+            <input type="radio" name="source-of-stress" value="mixed-sources" required />
+            Mixed Sources
+          </label><br />
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+      <div id="recommendationDisplay"></div>
+    </div>
+
+    <script src="questionaire.js"></script>
+  </body>
+</html>
