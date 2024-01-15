@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const questionnaireButton = document.querySelector('button[href="/questionaire"]');
 
     loginButton.addEventListener('click', () => {
-        window.location.href = '/login.html'; // Assuming you have a login.html in your public directory
+        window.location.href = '/login.html'; 
     });
 
     registerButton.addEventListener('click', () => {
-        window.location.href = '/register.html'; // Assuming you have a register.html
+        window.location.href = '/register.html'; 
     });
 
     questionnaireButton.addEventListener('click', () => {
-        window.location.href = '/questionaire.html'; // Assuming you have a questionnaire.html
+        window.location.href = '/questionaire.html'; 
     });
 });

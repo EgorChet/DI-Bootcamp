@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (response.ok) {
         // Redirect to questionnaire page on successful login
-        window.location.href = "/questionaire.html"; // Replace with the actual path of your questionnaire page
+        window.location.href = "/questionaire.html"; 
       } else {
         // Handle unsuccessful login, e.g., show an error message
         alert("Login failed. Please check your username and password.");

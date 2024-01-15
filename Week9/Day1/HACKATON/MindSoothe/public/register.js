@@ -1,4 +1,3 @@
-console.log("Client-side JavaScript is running");
 document.addEventListener("DOMContentLoaded", () => {
   const registerForm = document.getElementById("register-form");
   const registerButton = document.getElementById("register-button");
