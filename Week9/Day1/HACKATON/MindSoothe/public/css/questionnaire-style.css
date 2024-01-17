@@ -8,6 +8,13 @@
 }
 
 body {
+  background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
     background-color: #f4f7f6;
     font-size: 16px;
     padding-top: 50px; /* Added padding to the top */

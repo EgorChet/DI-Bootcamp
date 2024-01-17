@@ -6,8 +6,23 @@ body {
   min-height: 100vh;
 }
 
+body {
+  background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1,
+h3 {
+  color: white; /* or any other color that contrasts well with your background */
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  border-radius: 10px; /* rounded corners */
+  padding: 10px; /* space around text */
+  margin: 10px 0; /* optional: add some margin */
+}
+
 #recommendationDisplay {
-  background-color: white;
   padding: 20px;
   margin: 15px;
   text-align: center;
@@ -22,9 +37,9 @@ body {
 }
 
 .recommendation-card {
-  background-color: #eaeaea;
+  background-color: rgba(234, 234, 234, 0.8);
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   padding: 15px;
   margin: 10px 0;
   height: 45vh;

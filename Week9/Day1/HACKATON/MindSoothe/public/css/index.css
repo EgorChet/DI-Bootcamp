@@ -1,54 +1,60 @@
 /* homepage.css */
+body {
+  background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* Center the container in the middle of the screen */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f7f6; /* Match the background color of other pages */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f7f6; /* Match the background color of other pages */
 }
 
 .container {
-    background-color: white; /* Match the background color of other pages */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: white; /* Match the background color of other pages */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Style the button */
 button {
-    background-color: #5c6bc0;
-    color: white;
-    padding: 10px 10px; /* Adjust padding as needed */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 10px;
-    width: 80%; /* Set the button width to 60% */
+  background-color: #5c6bc0;
+  color: white;
+  padding: 10px 10px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  width: 80%; /* Set the button width to 60% */
 }
 
 button:hover {
-    background-color: #3f51b5;
+  background-color: #3f51b5;
 }
 
 h1 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-
-h1, h2, p {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+h1,
+h2,
+p {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
-
