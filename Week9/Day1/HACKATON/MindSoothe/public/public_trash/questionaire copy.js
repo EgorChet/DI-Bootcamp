@@ -1,15 +1,10 @@
 // Function to check if the user is logged in and get the userId
 const getUserId = () => {
-  const userSession = sessionStorage.getItem("userSession");
-  if (userSession) {
-    return JSON.parse(userSession).userId;
-  } else {
-    return null;
-  }
+  const userId = localStorage.getItem("userId");
+  return userId ? userId : null; // Returns the user ID if it exists, otherwise null
 };
 
 // Function to display recommendations
-
 const displayRecommendations = (recommendations) => {
   const recommendationDisplay = document.getElementById("recommendationDisplay");
   if (recommendationDisplay) {
@@ -46,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const userId = getUserId();
 
     const formData = {
-      userId,
+      userId: userId,
       stress_level: parseInt(stressLevelInput.value),
       sleep_quality: parseInt(sleepQualityInput.value),
       exercise_frequency: parseInt(exerciseFrequencyInput.value),

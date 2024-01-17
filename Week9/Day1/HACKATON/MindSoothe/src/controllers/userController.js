@@ -19,7 +19,6 @@ const registerUser = async (req, res) => {
     await userModel.createUser({ name, lastName, username, email, password: hashedPassword });
 
     res.status(201).json({ message: "User registered successfully" });
-
   } catch (error) {
     console.error(error); // Log the error for debugging purposes
     res.status(500).json({ message: "Error registering user" });
@@ -42,7 +41,7 @@ const loginUser = async (req, res) => {
       return res.status(400).send("Invalid credentials");
     }
 
-    res.send("User logged in successfully");
+    res.json({ ...user, password: "" });
   } catch (error) {
     res.status(500).send("Error logging in user");
   }

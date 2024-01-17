@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7f6;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+
+      #recommendationDisplay {
+        background-color: white;
+        padding: 20px;
+        margin: 15px;
+        text-align: center;
+        width: 95%;
+        max-width: none;
+      }
+
+      .recommendation-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .recommendation-card {
+        background-color: #eaeaea;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        margin: 10px 0;
+        height: 45vh;
+      }
+
+      .recommendation-card p {
+        color: #333;
+        font-size: 18px;
+      }
+
+      .recommendation-card img {
+        width: 50%; /* Set a fixed width */
+        height: 250px; /* Set a fixed height */
+        object-fit: cover; /* This will cover the area without stretching the image */
+        border-radius: 8px; /* Optional: for rounded corners */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="recommendationDisplay">
+      <h1>Your Recommendations</h1>
+      <h3>Please take these four simple steps to become a happier version of yourself</h3>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const recommendationsData = JSON.parse(localStorage.getItem("recommendations"));
+        if (recommendationsData) {
+          displayRecommendations(recommendationsData);
+        }
+      });
+
+      const displayRecommendations = async (recommendations) => {
+        const recommendationDisplay = document.getElementById("recommendationDisplay");
+        if (!recommendationDisplay) {
+          console.error("Recommendation display element not found");
+          return;
+        }
+
+        const gridContainer = document.createElement("div");
+        gridContainer.className = "recommendation-grid";
+
+        const gifQueries = {
+          stressLevel: "Stress",
+          sleepQuality: "Sleep",
+          exerciseFrequency: "Fitness",
+          sourceStress: "Sources of Stress",
+        };
+
+        let stepNumber = 0;
+        for (const key in gifQueries) {
+          if (gifQueries.hasOwnProperty(key)) {
+            stepNumber++;
+            const gifQuery = gifQueries[key];
+            const recommendationText = recommendations[key];
+            const gifUrl = await fetchGif(gifQuery);
+
+            const card = document.createElement("div");
+            card.className = "recommendation-card";
+            card.innerHTML = `
+        <h4>Step ${stepNumber}</h4>
+        <p>${gifQuery}: ${recommendationText}</p>
+        <img src="${gifUrl}" alt="${gifQuery} GIF" />
+      `;
+            gridContainer.appendChild(card);
+          }
+        }
+
+        recommendationDisplay.appendChild(gridContainer);
+      };
+
+      const fetchGif = async (query) => {
+        try {
+          const apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=V8mcd73PFZn30N1ac11rhtIpZ3023G2w&q=${encodeURIComponent(
+            query
+          )}&limit=1`;
+          const response = await fetch(apiUrl);
+          const data = await response.json();
+
+          return data.data.length > 0 ? data.data[0].images.original.url : "";
+        } catch (error) {
+          console.error("Error fetching GIF:", error);
+          return "";
+        }
+      };
+    </script>
+  </body>
+</html>
+
+<!-- // const displayRecommendations = (recommendations) => { // const recommendationDisplay =
+document.getElementById("recommendationDisplay"); // if (recommendationDisplay) { //
+recommendationDisplay.innerHTML = ` //
+<h1>Your Recommendations</h1>
+
+<h3>Please take these four simple steps to become a happier version of yourself</h3>
+
+<div class="recommendation-card"><p>Stress: ${recommendations.stressRecommendation}</p></div>
+
+<div class="recommendation-card"><p>Sleep Quality: ${recommendations.sleepRecommendation}</p></div>
+
+<div class="recommendation-card">
+  <p>Exercise Frequency: ${recommendations.exerciseRecommendation}</p>
+</div>
+
+<div class="recommendation-card">
+  <p>Source of Stress: ${recommendations.sourceStressRecommendation}</p>
+</div>
+// `; // } else { // console.error("Recommendation display element not found"); // } // }; //
+window.onbeforeunload = () => { // localStorage.removeItem("recommendations"); // }; //
+<p>${key}: ${recommendationText}</p> -->
+
+<!-- //   const fetchGif = async (query) => {
+    //     try {
+    //       const apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=V8mcd73PFZn30N1ac11rhtIpZ3023G2w&q=${encodeURIComponent(
+    //         query
+    //       )}&limit=1`;
+    //       const response = await fetch(apiUrl);
+    //       const data = await response.json();
+    //       return data.data.length > 0 ? data.data[0].images.original.url : ""; // Return first
+    //       //   GIF from the search results or an empty string if none found.
+    //     } catch (error) {
+    //       console.error("Error fetching GIF:", error);
+    //       return ""; // Return empty string in case of an error
+    //     }
+    //   }; -->

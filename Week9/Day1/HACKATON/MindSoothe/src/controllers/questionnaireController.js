@@ -34,6 +34,7 @@ const getUserResponses = async (req, res) => {
 };
 
 module.exports = {
-  submitResponse,
   getUserResponses,
+  submitResponse
 };
+

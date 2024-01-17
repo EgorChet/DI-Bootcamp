@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#recommendationDisplay {
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  width: 95%;
+  max-width: none;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.recommendation-card {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px 0;
+  height: 45vh;
+}
+
+.recommendation-card p {
+  color: #333;
+  font-size: 18px;
+}
+
+.recommendation-card img {
+  width: 50%; /* Set a fixed width */
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* This will cover the area without stretching the image */
+  border-radius: 8px; /* Optional: for rounded corners */
+}
