@@ -1,0 +1,11 @@
+.carousel-container {
+  width: 60%; /* Adjust the width as needed */
+  max-width: 500px; /* Maximum width */
+  margin: auto; /* Center the carousel */
+  height: auto; /* Adjust the height as needed, or keep it auto */
+}
+
+.carousel-container .carousel img {
+    width: 100%;  /* This ensures each image takes the full width of the carousel */
+    height: auto; /* This maintains the aspect ratio of the images */
+}
