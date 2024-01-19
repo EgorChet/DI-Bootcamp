@@ -1,0 +1,12 @@
+.carousel {
+  text-align: center;
+  max-width: 600px; /* Adjust this value as needed */
+  margin: auto;
+}
+
+.carousel img {
+  width: 100%;      /* This makes the image fill the container */
+  height: auto;     /* This maintains the aspect ratio */
+  display: block;   /* Ensures the image is a block-level element */
+  margin: auto;     /* Centers the image in the container */
+}

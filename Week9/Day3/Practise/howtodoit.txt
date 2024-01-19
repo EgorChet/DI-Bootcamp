@@ -1,0 +1,35 @@
+(base) egorchetverikov@ILWU-MacBook-Air Day3 % npm create vite@latest my-third-react
+Need to install the following packages:
+create-vite@5.1.0
+Ok to proceed? (y) y
+✔ Select a framework: › React
+✔ Select a variant: › JavaScript
+
+Scaffolding project in /Users/egorchetverikov/Desktop/DI-Bootcamp/Week9/Day3/my-third-react...
+
+Done. Now run:
+
+  cd my-third-react
+  npm install
+  npm run dev
+
+(base) egorchetverikov@ILWU-MacBook-Air Day3 % cd my-third-react
+(base) egorchetverikov@ILWU-MacBook-Air my-third-react % npm install
+
+added 271 packages, and audited 272 packages in 14s
+
+97 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+(base) egorchetverikov@ILWU-MacBook-Air my-third-react % npm run dev
+
+> my-third-react@0.0.0 dev
+> vite
+
+
+  VITE v5.0.11  ready in 988 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
