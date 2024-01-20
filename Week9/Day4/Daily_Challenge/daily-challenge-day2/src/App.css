@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+  background-color: #f7f7f7; /* Light grey, Apple-like background */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif; /* System fonts for Apple devices */
+}
+
+.App-header {
+  background-color: #fff; /* White background for the header */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #333; /* Dark grey text for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.language-list {
+  list-style: none;
+  padding: 0;
+}
+
+.language-item {
+  margin-bottom: 20px;
+  background-color: #fff; /* White background for items */
+  color: #333;
+  border-radius: 8px; /* Softly rounded corners */
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Gentle shadow for elevation */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 450px;
+}
+
+.language-votes {
+  width: 60px;
+  text-align: center;
+  margin-right: 20px;
+  background-color: #007aff; /* Apple blue for votes */
+  color: white;
+  border-radius: 30%; /* Circular shape for votes */
+  line-height: 40px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.language-name {
+  flex: 1;
+  text-align: left;
+  font-weight: bold;
+}
+
+.vote-button {
+  width: 120px;
+  align-items: center;
+  text-align: center;
+  margin-left: 15px;
+  background-color: #007aff; /* Consistent Apple blue for buttons */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Consistently rounded corners */
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vote-button:hover {
+  background-color: #005ecb; /* Slightly darker on hover */
+}
