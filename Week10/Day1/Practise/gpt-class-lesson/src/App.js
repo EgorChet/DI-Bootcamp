@@ -2,6 +2,7 @@ import "./App.css";
 import { Component } from "react";
 import ParentComponent from "./components/Parent";
 import Counter from "./components/Counter";
+import UserProfile from "./components/UserProfile";
 
 class MyComponent extends Component {
   render() {
@@ -34,6 +35,10 @@ function App() {
       <h1>
         4. Counter Component using Class Component
         <Counter />
+      </h1>
+      <h1>
+        5. User Profile Component using Class Component Lifecycle Methods
+        <UserProfile userId={1} /> {/* Example: Passing userId as a prop */}
       </h1>
     </div>
   );
