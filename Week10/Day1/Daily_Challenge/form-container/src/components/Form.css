@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Style the form container */
+.form-container {
+  background-color: #f0f0f0; /* Light gray background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Space between form and entered info */
+}
+
+.info-container {
+  background-color: #e0e0e0; /* Slightly darker gray for the entered info */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.inputForm {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: transparent; /* Optional: make it transparent */
+  border: none; /* Optional: remove border */
+  box-shadow: none; /* Optional: remove shadow */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Style the text input fields */
+.text,
+.inputForm input[type="text"],
+.inputForm select,
+.inputForm input[type="radio"],
+.inputForm input[type="checkbox"] {
+  width: 100%; /* Consistent width */
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the radio buttons and labels */
+.radiobutton {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Style the select input */
+.destination-input {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+.submit {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inputForm button:hover {
+  background-color: #45a049;
+}
+
+/* Style the dietary restrictions labels and checkboxes */
+.restrictions-title,
+.restrictions input[type="checkbox"] {
+  margin-top: 10px; /* For title */
+  margin-right: 10px; /* For checkboxes */
+  vertical-align: middle;
+}
+
+/* Style for gender radio buttons */
+.radio-group label {
+  display: inline-block; /* Or use 'inline' */
+  margin-right: 15px; /* Adjust the spacing between options */
+}
+
+/* Style for dietary restrictions checkboxes */
+.restrictions label {
+  display: inline-block; /* Or use 'inline' */
+  margin-right: 15px; /* Adjust the spacing between checkboxes */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .inputForm {
+    width: 100%;
+    margin: 0;
+  }
+}
