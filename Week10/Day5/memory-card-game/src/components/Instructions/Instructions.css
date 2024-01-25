@@ -1,0 +1,39 @@
+.instructions {
+    background-color: #f0f2f5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .instructions h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .instructions p {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .instructions ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .instructions li {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .instructions li::before {
+    content: '⭐';
+    color: #ff9900;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  

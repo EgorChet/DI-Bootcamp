@@ -1,0 +1,17 @@
+/* BookCard.css */
+.book-card {
+  height: 100%; /* Set a fixed height for consistent card size */
+}
+
+.card-title {
+  white-space: nowrap; /* Prevent book titles from wrapping to the next line */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) to indicate truncation */
+  max-height: 1.2em; /* Limit to a maximum of 1.2 lines (adjust as needed) */
+}
+
+.card-text {
+  max-height: 3.6em; /* Limit card text to a maximum of 3.6 lines (adjust as needed) */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) to indicate truncation */
+}

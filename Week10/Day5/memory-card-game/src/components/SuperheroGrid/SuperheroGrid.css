@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four items in a row */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    background-color: #eaeaea; /* Background color for the grid */
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* Two items in a row for smaller screens */
+    }
+  }
+  

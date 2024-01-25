@@ -1,0 +1,22 @@
+/* Header.css */
+.header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-family: "Libre Baskerville", serif; /* Use your chosen font here */
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px; /* Add spacing between the icon and title */
+}

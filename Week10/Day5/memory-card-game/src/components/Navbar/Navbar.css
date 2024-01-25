@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d); /* Superhero cape colors */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+  }
+  
+  .navbar h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1.5px;
+  }
+  
+  .score-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .score {
+    background: rgba(255, 255, 255, 0.9);
+    color: #282c34;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+    font-weight: bold;
+  }
+  
+  .score-title {
+    display: block;
+    font-size: 0.8rem;
+    color: #282c34;
+    margin-bottom: 4px;
+  }
+  

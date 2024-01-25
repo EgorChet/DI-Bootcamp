@@ -1,0 +1,20 @@
+.card {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: #f4f4f4; /* Light gray background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding some shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.card img {
+  width: 100%; /* Make image width 100% of the card */
+  height: 400px; /* Fixed height for images */
+  object-fit: cover; /* Ensure image covers the area nicely */
+}

@@ -1,0 +1,21 @@
+.congrats-page {
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+  }
+  
+  .congrats-page h1 {
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .congrats-page button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

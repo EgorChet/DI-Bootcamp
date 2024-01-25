@@ -1,0 +1,38 @@
+/* BookList.css */
+
+
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-lg-6.mb-4 {
+    width: 48%; /* Adjust the width to control the number of columns per row */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    background-color: #018df9;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .col-lg-6.mb-4:hover {
+    transform: scale(1.02); /* Add a slight zoom effect on hover */
+  }
+  
+  /* Style the book card's title */
+  .book-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Style the book card's author and published date */
+  .book-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  /* Add more custom styles as needed */
+  
