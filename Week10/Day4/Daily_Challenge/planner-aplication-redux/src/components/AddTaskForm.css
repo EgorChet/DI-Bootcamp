@@ -1,0 +1,29 @@
+/* AddTaskForm.css (or your preferred CSS file) */
+
+/* Input field styles */
+.form-control {
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  height: 50px; /* Adjust the height as needed */
+  width: 400px; /* Adjust the width as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 10px; /* Padding */
+  width: 30%;
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+}

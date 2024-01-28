@@ -1,0 +1,86 @@
+/* TaskItem.css */
+
+.list-group-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  cursor: pointer;
+  flex-grow: 1;
+  word-wrap: break-word; /* Allow text to wrap */
+  max-width: 80%; /* Set a maximum width for the label */
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 5px; /* Space between buttons */
+  width: 80px; /* Ensuring buttons are of the same size */
+}
+
+.btn-edit {
+  background-color: #97abc1;
+  border-color: #7597bc;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529; /* Dark text for contrast */
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Style for input when editing */
+.form-control {
+  margin-top: 10px; /* Provide spacing from checkbox */
+  width: auto; /* Allow it to not take full width */
+  display: inline-block; /* Align with other inline elements */
+  margin-right: 10px; /* Spacing from the Save button */
+}
+
+/* Adjust button group for editing */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}

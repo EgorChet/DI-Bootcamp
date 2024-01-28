@@ -1,0 +1,18 @@
+/* CalendarPicker.css */
+.react-datepicker {
+  font-size: 0.9rem;
+}
+
+.react-datepicker__navigation {
+  top: 10px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  color: #007bff; /* Theme color */
+}
+
+.react-datepicker-wrapper {
+  width: 100%; /* or the width you prefer */
+  margin-bottom: 20px;
+}

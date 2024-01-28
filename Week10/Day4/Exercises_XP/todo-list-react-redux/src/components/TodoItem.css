@@ -1,0 +1,37 @@
+/* Styles for the todo item container */
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* space between todo items */
+    background-color: black; /* or any color that fits your design */
+    padding: 10px;
+    border-radius: 4px; /* rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  }
+  
+  /* Styles for the todo text */
+  .todo-text {
+    flex-grow: 1;
+    margin-left: 10px; /* space between checkbox and todo text */
+  }
+  
+  /* Styles for the checkbox */
+  .todo-checkbox {
+    margin-right: 10px; /* space between checkbox and todo text */
+  }
+  
+  /* Styles for the remove button */
+  .remove-btn {
+    margin-left: 20px; /* space between todo text and remove button */
+    background-color: #ff6b6b; /* a red color for the remove action */
+    color: #fff;
+    border: none;
+    padding: 5px 15px; /* padding inside the button */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background-color: #ff4757; /* darker red on hover */
+  }
+  
