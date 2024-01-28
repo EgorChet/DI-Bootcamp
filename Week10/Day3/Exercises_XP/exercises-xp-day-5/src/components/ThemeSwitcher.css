@@ -1,0 +1,14 @@
+/* ThemeSwitcher.css */
+.theme-switcher-btn {
+  padding: 10px 20px;
+  margin-left: 100px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.theme-switcher-btn:hover {
+  background-color: #45a049;
+}

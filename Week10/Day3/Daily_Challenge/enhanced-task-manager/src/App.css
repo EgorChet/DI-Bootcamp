@@ -1,0 +1,14 @@
+.task-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-item .form-control {
+  flex-grow: 1;
+  margin-right: 10px;
+}

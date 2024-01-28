@@ -1,0 +1,19 @@
+/* CharacterCounter.css */
+.character-counter {
+    margin: 10px 0;
+  }
+  
+  .character-counter textarea {
+    width: 80%;
+    padding: 10px;
+    margin-left: 100px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .character-counter p {
+    margin-top: 10px;
+    color: #666;
+  }
+  
