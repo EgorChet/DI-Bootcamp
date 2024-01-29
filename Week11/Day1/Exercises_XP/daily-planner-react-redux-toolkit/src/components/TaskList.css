@@ -1,0 +1,10 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.filters button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}

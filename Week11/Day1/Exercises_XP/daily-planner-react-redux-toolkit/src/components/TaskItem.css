@@ -1,0 +1,14 @@
+.completed {
+    text-decoration: line-through;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .task-item input[type='text'] {
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,17 @@
+/* TodoList.css */
+
+ul {
+  width: 50%;
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Resets default padding */
+}
+
+li {
+  margin-bottom: 10px; /* Adds space between todo items */
+  background: #0e0e0e; /* Optional: adds a background color */
+  padding: 10px; /* Adds some padding inside each todo item */
+  border-radius: 10px; /* Optional: rounds the corners */
+  display: flex; /* For aligning the checkbox, text, and delete button */
+  align-items: center; /* Aligns items vertically in the middle */
+  justify-content: space-between; /* Spreads out items in the flex container */
+}
