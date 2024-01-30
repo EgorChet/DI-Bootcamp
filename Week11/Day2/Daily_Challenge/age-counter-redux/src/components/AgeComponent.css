@@ -1,0 +1,8 @@
+.loading-container {
+  display: block;
+  align-items: center; /* Aligns image and text vertically */
+}
+
+.loading-logo {
+  margin-right: 10px; /* Adds some space between the image and text */
+}

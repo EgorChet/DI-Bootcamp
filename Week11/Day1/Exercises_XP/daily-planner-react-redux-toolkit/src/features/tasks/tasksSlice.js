@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 export const tasksSlice = createSlice({
   name: "tasks",
@@ -6,10 +6,14 @@ export const tasksSlice = createSlice({
   reducers: {
     addTask: (state, action) => {
       const { date, task } = action.payload;
+
+      const taskId = nanoid();
+      const newTask = { ...task, id: taskId };
+
       if (!state[date]) {
         state[date] = [];
       }
-      state[date].push(task);
+      state[date].push(newTask);
     },
     toggleTask: (state, action) => {
       const { date, taskId } = action.payload;

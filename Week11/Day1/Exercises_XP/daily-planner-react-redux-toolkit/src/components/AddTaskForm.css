@@ -1,0 +1,15 @@
+.google-style-input {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding-left: 40px;
+  height: 6vh;
+}
+
+.google-style-input:focus {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-margin-left {
+  margin-left: 10px;
+}

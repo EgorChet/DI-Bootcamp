@@ -1,0 +1,20 @@
+.user-details {
+  background-color: #e0a0a0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-details {
+  color: #333;
+}
+
+.user-details p {
+  font-size: 16px;
+  color: #666;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #333;
+}

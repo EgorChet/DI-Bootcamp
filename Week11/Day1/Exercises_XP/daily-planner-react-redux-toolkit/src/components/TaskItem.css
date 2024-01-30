@@ -1,14 +1,33 @@
 .completed {
-    text-decoration: line-through;
-  }
-  
-  .task-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .task-item input[type='text'] {
-    margin-right: 10px;
-  }
-  
+  text-decoration: line-through;
+}
+
+.task-item input[type="text"] {
+  margin-right: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between; /* This will separate the checkbox/text and the buttons */
+  align-items: center;
+  padding: 0.75rem 1rem; /* Adjust the padding as necessary */
+  margin-bottom: 0.5rem; /* Space between each task item */
+  border-radius: 0.25rem; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Checkbox and text container */
+.task-item > div:first-child {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allows this div to take up the available space */
+}
+
+.form-check-input {
+  margin-right: 1rem; /* Space between checkbox and text */
+}
+
+.task-text {
+  flex-grow: 1; /* Allows text to take up the available space and pushes buttons to the right */
+  margin-right: 1rem; /* Space between text and buttons */
+}

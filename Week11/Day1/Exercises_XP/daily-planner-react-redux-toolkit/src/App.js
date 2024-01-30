@@ -1,22 +1,26 @@
 import React, { useState } from "react";
-import { Provider } from "react-redux";
-import store from "./app/store";
-import AddTaskForm from "./components/AddTaskForm";
-import CalendarPicker from "./components/CalendarPicker";
-import TaskList from "./components/TaskList";
 
-const App = () => {
+import TaskList from "./components/TaskList";
+import AddTaskForm from "./components/AddTaskForm";
+import "./App.css"; // Import your custom CSS here
+
+function App() {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   return (
-    <Provider store={store}>
-      <div className='App'>
-        <CalendarPicker onSelectDate={setSelectedDate} />
-        <AddTaskForm selectedDate={selectedDate} />
-        <TaskList selectedDate={selectedDate.toISOString().split("T")[0]} />
+    <div className='container my-4'>
+      <h1 className='text-center mb-4'>Task Manager</h1>
+      <div className='row'>
+        <div className='col-md-10 mx-auto'>
+          {/* Component to add new tasks */}
+          <AddTaskForm selectedDate={selectedDate} />
+
+          {/* Component to display tasks */}
+          <TaskList selectedDate={selectedDate.toISOString().split("T")[0]} />
+        </div>
       </div>
-    </Provider>
+    </div>
   );
-};
+}
 
 export default App;

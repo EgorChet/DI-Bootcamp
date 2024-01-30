@@ -1,10 +1,20 @@
-.filters {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+.list-group-item {
+  border-radius: 0.25rem; /* Consistent rounded corners */
+  margin-bottom: 0.5rem; /* Space between list items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
 }
 
-.filters button {
-  margin: 0 5px;
-  padding: 5px 10px;
+@media (max-width: 768px) {
+  .task-item .form-check-input {
+    margin-right: 0.5rem; /* Smaller space between checkbox and text on mobile */
+  }
+
+  .task-text {
+    margin-right: 0.5rem; /* Smaller space between text and buttons on mobile */
+  }
+
+  .task-item .d-flex > button {
+    padding: 0.25rem 0.5rem; /* Smaller padding on buttons for mobile */
+    font-size: 0.875rem; /* Smaller font size for text on buttons for mobile */
+  }
 }
